@@ -15,6 +15,5 @@ namespace soft.Data
         public string Email { get; set; }
         public string TelNumber { get; set; }
 
-
     }
 }
