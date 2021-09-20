@@ -16,7 +16,7 @@ namespace Domain
     }
     public class Person : Base
     {
-        public List<Roles> Roles { get; }
+        public List<PersonRole> Roles { get; }
     }
     public class Athlete : PersonRole
     {
@@ -39,16 +39,16 @@ namespace Domain
         public List<Training> Trainings { get; }
         public List<Service> Services { get; }
 
-        public void AddNewTraining(Training t, Coach c, Adminstrator a)
-        public void AddCoach { Coach c, Administrator a}
-        public void RemoveCoach { Coach c, Administrator a}
+        public void AddNewTraining(Training t, Coach c, Adminstrator a) { throw new NotImplementedException();}
+        public void AddCoach ( Coach c, Adminstrator a) { }
+        public void RemoveCoach ( Coach c, Adminstrator a) { }
     }
     public class Training : Base
     {
         public List<Coach> Coaches { get; }
         public List<Athlete> Athletes { get; }
-        public void AddCoach { Coach c, Administrator a}
-        public void RemoveCoach { Coach c, Administrator a}
+        public void AddCoach ( Coach c, Adminstrator a) { }
+        public void RemoveCoach(Coach c, Adminstrator a) { }
     }
     public class Service : Base
     {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,8 +10,8 @@ namespace Data
     public class BaseData
     {
         public int Id { get; set; }
-        public DataTime? ValidFrom { get; set; }
-        public DataTime? ValidTo { get; set; }
+        public DateTime? ValidFrom { get; set; }
+        public DateTime? ValidTo { get; set; }
     }
     public class PersonRoleData : BaseData
     {
@@ -48,8 +49,8 @@ namespace Data
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public DataTime? ValidFrom { get; set; } // kestvus? kas nii sobib ?
-        public DataTime? ValidTo { get; set; }
+        public DateTime? ValidFrom { get; set; } // kestvus? kas nii sobib ?
+        public DateTime? ValidTo { get; set; }
         public int MaxNumberOfAthletes { get; set; }
 
     }
