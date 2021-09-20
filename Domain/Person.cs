@@ -16,6 +16,7 @@ namespace Domain
     }
     public class Person : Base
     {
+        public List<Roles> Roles { get; }
     }
     public class Athlete : PersonRole
     {
@@ -29,8 +30,25 @@ namespace Domain
     public class Adminstrator : PersonRole
     {
     }
+    public class SportClub : Base
+    {
+        public List<Coach> Coaches { get; }
+        public List<Nutritionist> Nutritionists { get; }
+        public List<Athlete> Athletes { get; }
+        public List<Adminstrator> Adminstrator { get; }
+        public List<Training> Trainings { get; }
+        public List<Service> Services { get; }
+
+        public void AddNewTraining(Training t, Coach c, Adminstrator a)
+        public void AddCoach { Coach c, Administrator a}
+        public void RemoveCoach { Coach c, Administrator a}
+    }
     public class Training : Base
     {
+        public List<Coach> Coaches { get; }
+        public List<Athlete> Athletes { get; }
+        public void AddCoach { Coach c, Administrator a}
+        public void RemoveCoach { Coach c, Administrator a}
     }
     public class Service : Base
     {
