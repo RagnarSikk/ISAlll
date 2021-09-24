@@ -3,6 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>isa3.Data</AssemblyName>
+    <RootNamespace>isa3.Data</RootNamespace>
   </PropertyGroup>
 
 </Project>
