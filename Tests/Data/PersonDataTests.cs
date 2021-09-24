@@ -3,19 +3,13 @@ using Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Data;
 
-namespace Tests.Data
+namespace isa3.Tests.Data
 {
     [TestClass]
-    public class PersonDataTests
+    public class PersonDataTests : BaseTests<PersonData, BaseData>
     {
-        [TestMethod]
-        public void CanCreateTest() {
-            Assert.IsNotNull(new PersonData()); }
-
-        [TestMethod]
-        public void InheritedFrom() =>
-                    Assert.IsInstanceOfType(new PersonData().GetType().BaseType, typeof(object));
         [TestMethod]
         public void LastNameTest() { Assert.Inconclusive(); }
 
