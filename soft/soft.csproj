@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>aspnet-soft-67DAD25C-BD79-4956-9CEA-F14FA7EDC581</UserSecretsId>
+    <AssemblyName>isa3.soft</AssemblyName>
+    <RootNamespace>isa3.soft</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>Data</AssemblyName>
+    <AssemblyName>isa3.Data</AssemblyName>
     <RootNamespace>isa3.Data</RootNamespace>
   </PropertyGroup>
 

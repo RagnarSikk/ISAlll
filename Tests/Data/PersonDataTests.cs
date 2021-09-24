@@ -1,16 +1,21 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace isa3.Tests.Data
+namespace Tests.Data
 {
     [TestClass]
     public class PersonDataTests
     {
         [TestMethod]
-        public void CanCreateTest() { Assert.Inconclusive(); }
+        public void CanCreateTest() {
+            Assert.IsNotNull(new PersonData()); }
 
+        [TestMethod]
+        public void InheritedFrom() =>
+                    Assert.IsInstanceOfType(new PersonData().GetType().BaseType, typeof(object));
         [TestMethod]
         public void LastNameTest() { Assert.Inconclusive(); }
 
