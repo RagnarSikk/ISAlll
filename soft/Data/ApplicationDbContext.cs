@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace soft.Data
+namespace isa3.soft.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

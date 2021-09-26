@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Data
+namespace isa3.Data
 {
     public class NutritionistData : PersonRoleData
     {

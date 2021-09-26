@@ -1,9 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Data;
+using isa3.Data;
 
 namespace isa3.Tests.Data
 {

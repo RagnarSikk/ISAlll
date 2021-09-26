@@ -1,4 +1,4 @@
-﻿namespace Data
+﻿namespace isa3.Data
 {
     public class ServicesData : BaseData
     {
