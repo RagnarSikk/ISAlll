@@ -1,54 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Data.BaseData">
-    <Position X="9.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAAAAA=</HashCode>
-      <FileName>PersonData.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Data.PersonRoleData">
-    <Position X="7.25" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PersonData.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Data.PersonData">
-    <Position X="14" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAIAAAAAAQAAAAAAAAAAAAAAAAAAgAAg=</HashCode>
-      <FileName>PersonData.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Data.AthleteData">
-    <Position X="10" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PersonData.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Data.CoachData">
-    <Position X="4.25" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PersonData.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Data.NutritionistData">
-    <Position X="6.5" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PersonData.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Data.AdminstratorData">
-    <Position X="8.25" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PersonData.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Data.SportClubData">
     <Position X="15.75" Y="3" Width="1.5" />
     <TypeIdentifier>
@@ -56,18 +7,82 @@
       <FileName>PersonData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Data.TrainingData">
-    <Position X="5" Y="0.5" Width="1.5" />
+  <Class Name="isa3.Data.AdminstratorData">
+    <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAACAAACACAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminstratorData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Data.AthleteData">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AthleteData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Data.CoachData">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoachData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Data.NutritionistData">
+    <Position X="4.25" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="isa3.Data.PersonRoleData" FixedFromPoint="true">
+      <Path>
+        <Point X="1.438" Y="2.441" />
+        <Point X="1.438" Y="4.125" />
+        <Point X="5" Y="4.125" />
+        <Point X="5" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NutritionistData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Data.PersonData">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAIAAAAAAQAAAAAAAAAAAAAAAAAAgAAg=</HashCode>
       <FileName>PersonData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Data.ServicesData">
-    <Position X="12.25" Y="3" Width="1.5" />
+  <Class Name="isa3.Data.PersonRoleData" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PersonRoleData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Data.ServicesData">
+    <Position X="6.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PersonData.cs</FileName>
+      <FileName>ServicesData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Data.SportClubData">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SportClubData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Data.TrainingData">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>TrainingData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Data.BaseData" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAAAAA=</HashCode>
+      <FileName>BaseData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
