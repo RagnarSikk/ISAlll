@@ -9,6 +9,5 @@ namespace isa3.Data
     public class PaymentData: BaseData
     {
         public decimal Amount { get; set; }
-        public DateTime PaymentTime
     }
 }

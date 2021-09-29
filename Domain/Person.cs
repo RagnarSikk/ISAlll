@@ -25,9 +25,11 @@ namespace isa3.Domain
     public class Coach : PersonRole
     {
         public List<Training> Trainings { get; }
+        public List<Service> Services { get; set; }
     }
     public class Nutritionist : PersonRole
     {
+        public List<Service> Services { get; set; }
     }
     public class Adminstrator : PersonRole
     {
@@ -56,6 +58,7 @@ namespace isa3.Domain
     }
     public class Service : Base
     {
+        public Nutritionist Nutritionist { get; set; }
     }
     public class Equipment : Base
     {
@@ -65,9 +68,9 @@ namespace isa3.Domain
     {
         public Athlete Athlete { get; set; }
     }
-    public class Membership : Base // võib olla nii vaheklass nt Athlete ja Training vahel või ka eraldi klass
+    public class Membership : Base 
     {
-        public Training Training { get; set; }
+        public Payment Payment { get; set; }
         public Athlete Athlete { get; set; }
     }
 }

@@ -1,7 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>isa3.Pages</AssemblyName>
+    <RootNamespace>isa3.Pages</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\isa3.Infra\Infra.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -8,5 +8,7 @@ namespace isa3.Data
 {
     public class MembershipData : BaseData
     {
+        public string AthleteId { get; set; }
+        public string PaymentId { get; set; }
     }
 }

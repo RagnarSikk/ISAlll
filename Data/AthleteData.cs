@@ -2,8 +2,9 @@
 {
     public class AthleteData : PersonRoleData
     {
+        public int Age {  get; set; }
         public double Weight { get; set; }
         public double Height { get; set; }
-        public double? Credit { get; set;}
+        public decimal? Credit { get; set;}
     }
 }

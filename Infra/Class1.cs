@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Infra
+﻿namespace isa3.Infra
 {
     public class Class1
     {
