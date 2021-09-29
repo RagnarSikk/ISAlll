@@ -1,4 +1,5 @@
 ﻿using System;
+using isa3.Data.Common;
 
 namespace isa3.Data
 {

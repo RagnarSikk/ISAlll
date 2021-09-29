@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using isa3.Data;
+using isa3.Data.Common;
 
 namespace isa3.Tests.Data
 {
