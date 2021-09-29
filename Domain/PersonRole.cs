@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using isa3.Data.Common;
+using isa3.Domain.People;
 
-namespace isa3.Data
+namespace isa3.Domain
 {
-    public class PaymentData: BaseData
+    public class PersonRole
     {
-        public decimal Amount { get; set; }
+        public Person Person { get; set; }
     }
 }

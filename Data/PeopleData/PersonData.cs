@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using isa3.Data.Common;
 
-namespace isa3.Data
+namespace isa3.Data.PeopleData
 {
     public class PersonData : BaseData
     {
