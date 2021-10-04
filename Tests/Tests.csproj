@@ -21,7 +21,12 @@
 
   <ItemGroup>
     <Folder Include="Domain\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Facade\" />
+    <Folder Include="Infra\" />
     <Folder Include="Soft\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Soft\NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>

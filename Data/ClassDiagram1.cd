@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="isa3.Data.PersonRoleData">
-    <Position X="2.75" Y="3.5" Width="1.5" />
+    <Position X="4.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PersonRoleData.cs</FileName>
@@ -35,7 +35,7 @@
       <FileName>SportClubData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="isa3.Data.TrainingData" Collapsed="true">
+  <Class Name="isa3.Data.TrainingData">
     <Position X="2.5" Y="1.75" Width="1.5" />
     <InheritanceLine Type="isa3.Data.Common.BaseData" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
@@ -74,8 +74,8 @@
     <Position X="4.75" Y="5.5" Width="1.5" />
     <InheritanceLine Type="isa3.Data.PersonRoleData" FixedToPoint="true">
       <Path>
-        <Point X="3.5" Y="4.925" />
-        <Point X="3.5" Y="5.2" />
+        <Point X="5" Y="4.925" />
+        <Point X="5" Y="5.2" />
         <Point X="5.562" Y="5.2" />
         <Point X="5.562" Y="5.5" />
       </Path>
