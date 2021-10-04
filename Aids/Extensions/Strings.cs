@@ -1,12 +1,9 @@
-﻿using Aids.Methods;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using isa3.Aids.Methods;
 
-namespace Aids.Extensions
+namespace isa3.Aids.Extensions
 {
     public static class Strings
     {

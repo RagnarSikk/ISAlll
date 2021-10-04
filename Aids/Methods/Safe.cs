@@ -1,11 +1,7 @@
-﻿using Aids.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using isa3.Aids.Logging;
 
-namespace Aids.Methods
+namespace isa3.Aids.Methods
 {
     public static class Safe
     {

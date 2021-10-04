@@ -1,13 +1,11 @@
-﻿using Aids.Extensions;
-using Aids.Methods;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using isa3.Aids.Extensions;
+using isa3.Aids.Methods;
 
-namespace Aids.Reflections
+namespace isa3.Aids.Reflections
 {
     internal class GetSolution
     {

@@ -1,13 +1,10 @@
-﻿using Aids.Methods;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using isa3.Aids.Methods;
 
-namespace Aids.Reflections
+namespace isa3.Aids.Reflections
 {
     public static class GetMember
     {
