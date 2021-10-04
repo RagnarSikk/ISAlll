@@ -1,4 +1,6 @@
-﻿namespace isa3.Facade
+﻿
+
+namespace isa3.Facade
 {
     public class Class1
     {
