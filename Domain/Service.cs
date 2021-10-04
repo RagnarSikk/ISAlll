@@ -11,6 +11,8 @@ namespace isa3.Domain
     public class Service : Base
     {
         public Nutritionist Nutritionist { get; set; }
-        public Coach Coach { get; set; }
+        public Therapist Therapist { get; set; }
+        public Physiotherapist physiotherapist { get; set; }
+
     }
 }

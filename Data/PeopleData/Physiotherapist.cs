@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace isa3.Data.PeopleData
 {
-    class PsychologistData : PersonRoleData
+    class Physiotherapist : PersonRoleData
     {
     }
 }

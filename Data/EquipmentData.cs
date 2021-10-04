@@ -13,6 +13,9 @@ namespace isa3.Data
         public string Description {  get; set; }
         public int AmountAvailable {  get; set; }
 
+
+
+
         // TODO: mõelda mis propertyd veel võiksid olla
     }
 }

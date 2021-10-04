@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using isa3.Data.Common;
 
 namespace isa3.Data.PeopleData
@@ -11,7 +12,9 @@ namespace isa3.Data.PeopleData
         // ToDo: Add a Prefered name/nickname
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public int Age { get; set; } //DoB => Age? In case of a birthday, age changes and we should know.
+        public string Gender { get; set; }  
+        public DateTime? DateOfBirth { get; set; }
+       
 
     }
 }
