@@ -10,6 +10,7 @@ namespace isa3.Data
     public class MembershipData : BaseData
     {
         public string AthleteId { get; set; }
-        public string PaymentId { get; set; }
+        public string PaymentId { get; set; } //Kas see ei peaks ehk minema PaymentData alla?
+        //TODO: Erinevad valikud (3) membershippide vahel
     }
 }

@@ -10,6 +10,9 @@ namespace isa3.Data
     public class EquipmentData : BaseData
     {
         public string Name { get; set; }
+        public string Description {  get; set; }
+        public int AmountAvailable {  get; set; }
+
         // TODO: mõelda mis propertyd veel võiksid olla
     }
 }

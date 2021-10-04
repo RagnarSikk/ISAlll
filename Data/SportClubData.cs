@@ -4,5 +4,6 @@ namespace isa3.Data
 {
     public class SportClubData : BaseData
     {
+        // TODO: What is SportsClubData? 
     }
 }

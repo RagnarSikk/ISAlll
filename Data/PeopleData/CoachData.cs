@@ -4,6 +4,7 @@ namespace isa3.Data.PeopleData
 {
     public class CoachData : PersonRoleData
     {
-        public DateTime HireDate { get; set; }
+        //TODO: Coach should be able to add it's certifications
+
     }
 }

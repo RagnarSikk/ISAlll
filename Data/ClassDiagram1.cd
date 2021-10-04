@@ -1,77 +1,98 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="isa3.Data.PersonRoleData">
-    <Position X="0.75" Y="1.75" Width="1.5" />
+    <Position X="2.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PersonRoleData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.ServicesData">
-    <Position X="6.25" Y="1.75" Width="1.5" />
+    <Position X="6" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="isa3.Data.Common.BaseData" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="2.25" Y="1.25" />
+        <Point X="6.75" Y="1.25" />
+        <Point X="6.75" Y="1.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAABQAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>ServicesData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.SportClubData">
-    <Position X="4.5" Y="1.75" Width="1.5" />
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="isa3.Data.Common.BaseData" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="1.25" />
+        <Point X="5" Y="1.25" />
+        <Point X="5" Y="1.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SportClubData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="isa3.Data.TrainingData">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+  <Class Name="isa3.Data.TrainingData" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="isa3.Data.Common.BaseData" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="1.25" />
+        <Point X="3.25" Y="1.25" />
+        <Point X="3.25" Y="1.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>BAAAAAAAAAAgAAAAAAACAAQABAAAAAAAAAECAAAAAAI=</HashCode>
       <FileName>TrainingData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.PeopleData.AdminstratorData">
-    <Position X="2.5" Y="5" Width="1.5" />
+    <Position X="10" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PeopleData\AdminstratorData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.PeopleData.AthleteData">
-    <Position X="4.25" Y="5" Width="1.5" />
+    <Position X="11.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAABAEAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PeopleData\AthleteData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.PeopleData.CoachData">
-    <Position X="0.75" Y="5" Width="1.5" />
+    <Position X="2.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PeopleData\CoachData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.PeopleData.NutritionistData">
-    <Position X="6" Y="5" Width="1.5" />
+    <Position X="4.75" Y="5.5" Width="1.5" />
     <InheritanceLine Type="isa3.Data.PersonRoleData" FixedToPoint="true">
       <Path>
-        <Point X="1.5" Y="2.983" />
-        <Point X="1.5" Y="4.625" />
-        <Point X="6.812" Y="4.625" />
-        <Point X="6.812" Y="5" />
+        <Point X="3.5" Y="4.925" />
+        <Point X="3.5" Y="5.2" />
+        <Point X="5.562" Y="5.2" />
+        <Point X="5.562" Y="5.5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PeopleData\NutritionistData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="isa3.Data.PeopleData.PersonData" Collapsed="true">
-    <Position X="3.25" Y="0.5" Width="1.5" />
+  <Class Name="isa3.Data.PeopleData.PersonData">
+    <Position X="0.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAIAAAAAAQAAAAAAAAAAAAAAAAAAgAAg=</HashCode>
+      <HashCode>AAAAAAAAACAAAIAAAEAAQAAAAAAAAAAAAAAAAAAgAAg=</HashCode>
       <FileName>PeopleData\PersonData.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="isa3.Data.Common.BaseData" Collapsed="true">
+  <Class Name="isa3.Data.Common.BaseData">
     <Position X="0.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAAAAA=</HashCode>
@@ -79,35 +100,56 @@
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.EquipmentData">
-    <Position X="12.25" Y="1.75" Width="1.5" />
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="isa3.Data.Common.BaseData" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="1.25" />
+        <Point X="12" Y="1.25" />
+        <Point X="12" Y="1.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAIAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EquipmentData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.MembershipData">
-    <Position X="8.25" Y="1.75" Width="1.5" />
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="isa3.Data.Common.BaseData" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="1.25" />
+        <Point X="8.688" Y="1.25" />
+        <Point X="8.688" Y="1.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAQAAAA=</HashCode>
       <FileName>MembershipData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.PaymentData">
-    <Position X="10.25" Y="1.75" Width="1.5" />
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="isa3.Data.Common.BaseData" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="1.25" />
+        <Point X="10.312" Y="1.25" />
+        <Point X="10.312" Y="1.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PaymentData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.PeopleData.PsychologistData">
-    <Position X="7.75" Y="5" Width="1.5" />
+    <Position X="6.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PeopleData\PsychologistData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="isa3.Data.PeopleData.TherapistData">
-    <Position X="9.5" Y="5" Width="1.5" />
+    <Position X="8.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PeopleData\TherapistData.cs</FileName>
