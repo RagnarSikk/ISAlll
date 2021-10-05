@@ -1,12 +1,13 @@
-﻿using System;
+﻿using isa3.Data.People;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace isa3.Data.PeopleData
+namespace isa3.Data.People
 {
-    class Physiotherapist : PersonRoleData
+    public class TherapistData : PersonRoleData
     {
     }
 }

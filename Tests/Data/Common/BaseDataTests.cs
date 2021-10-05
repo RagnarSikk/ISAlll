@@ -5,14 +5,15 @@ using System.Text;
 using isa3.Data;
 using isa3.Data.Common;
 
-namespace isa3.Tests.Data
+namespace isa3.Tests.Data.Common
 {
     [TestClass]
     public class BaseDataTests : BaseTests<BaseData, object>
     {
 
         [TestMethod]
-        public void IdTest() {
+        public void IdTest()
+        {
             var a = 123;
             var o = new BaseData();
             o.Id = 123;
@@ -23,6 +24,6 @@ namespace isa3.Tests.Data
         public void ValidToTest() { Assert.Inconclusive(); }
         [TestMethod]
         public void ValidFromTest() { Assert.Inconclusive(); }
-
     }
+
 }

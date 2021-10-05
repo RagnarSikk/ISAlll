@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using isa3.Domain.People;
 
-namespace isa3.Domain
+namespace isa3.Domain.People
 {
     public class PersonRole
     {

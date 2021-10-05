@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using isa3.Domain.Common;
 
-namespace isa3.Data.PeopleData
+namespace isa3.Domain.Others
 {
-    class TherapistData : PersonRoleData
+    public class Equipment : Base
     {
+        public Training Training { get; set; }
     }
 }

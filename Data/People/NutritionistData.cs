@@ -1,6 +1,7 @@
-﻿using System;
+﻿using isa3.Data.People;
+using System;
 
-namespace isa3.Data.PeopleData
+namespace isa3.Data.People
 {
     public class NutritionistData : PersonRoleData
     {

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using isa3.Data.Common;
 
-namespace isa3.Data.PeopleData
+namespace isa3.Data.People
 {
     public class PersonData : BaseData
     {

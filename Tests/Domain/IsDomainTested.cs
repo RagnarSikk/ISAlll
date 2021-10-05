@@ -4,14 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using isa3.Tests.Data;
 
-namespace isa3.Tests.Data
+namespace isa3.Tests.Domain
 {
     [TestClass]
-    public class IsDataTested : AssemblyTests
+    public class IsDomainTested : AssemblyTests
     {
-        protected override string assembly => "isa3.Data";
+        protected override string assembly => "isa3.Domain";
         [TestMethod]
         public void IsCommonTested()
             => isAllTested(assembly, nameSpace("Common"));

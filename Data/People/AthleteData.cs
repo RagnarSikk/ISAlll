@@ -1,4 +1,4 @@
-﻿namespace isa3.Data.PeopleData
+﻿namespace isa3.Data.People
 {
     public class AthleteData : PersonData
     {

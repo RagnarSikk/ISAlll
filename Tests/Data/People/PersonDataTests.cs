@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Text;
 using isa3.Data;
 using isa3.Data.Common;
-using isa3.Data.PeopleData;
+using isa3.Data.People;
 
-namespace isa3.Tests.Data
+namespace isa3.Tests.Data.People
 {
     [TestClass]
     public class PersonDataTests : BaseTests<PersonData, BaseData>
@@ -23,4 +23,5 @@ namespace isa3.Tests.Data
         [TestMethod]
         public void PhoneNumberTest() { Assert.Inconclusive(); }
     }
+
 }
