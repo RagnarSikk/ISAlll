@@ -4,7 +4,7 @@ using System;
 
 namespace isa3.Data.People
 {
-    public class Physiotherapist : PersonRoleData
+    public class PhysiotherapistData : PersonRoleData
     {
     }
 }

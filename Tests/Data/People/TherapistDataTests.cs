@@ -3,7 +3,8 @@
 namespace isa3.Tests.Data.People
 {
     [TestClass]
-    public class PhysiotherapistDataTests
+    public class TherapistDataTests
     {
     }
+
 }
