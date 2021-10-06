@@ -13,5 +13,7 @@ namespace isa3.Tests
             => Assert.AreNotEqual(e, a);
         protected static void isNull<TExpected>(TExpected e) =>Assert.IsNull(e);
         protected static void isNotNull<TExpected>(TExpected e) => Assert.IsNotNull(e);
+        protected static void isTrue(bool e) => Assert.IsTrue(e);
+        protected static void isFalse(bool e) => Assert.IsFalse(e);
     }
 }
