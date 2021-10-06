@@ -1,9 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using isa3.Data.Common;
+using isa3.Data.People;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace isa3.Tests.Data.People
 {
     [TestClass]
-    public class PersonRoleDataTests
+    public class PersonRoleDataTests : SealedTests<PersonRoleData, PersonData>
     {
     }
 }
