@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\" />
-    <Folder Include="Domain\" />
-    <Folder Include="Facade\" />
+    <Folder Include="Facade\Common\" />
+    <Folder Include="Facade\People\" />
+    <Folder Include="Facade\Others\" />
     <Folder Include="Infra\" />
     <Folder Include="Soft\" />
     <Folder Include="Pages\" />

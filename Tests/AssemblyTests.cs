@@ -7,7 +7,8 @@ using isa3.Aids.Reflections;
 
 namespace isa3.Tests
 {
-    public class AssemblyTests : TestAssertions { 
+    public class AssemblyTests : TestAssertions
+    {
         private static string noClassesInNamespace => "No classes in the namespace {0}";
         private static string isNotTested => "<{0}> is not tested";
         private static string noClassesInAssembly => "No classes in the assembly {0}";
@@ -18,8 +19,8 @@ namespace isa3.Tests
         private List<string> list;
         [TestInitialize] public void CreateList() => list = new List<string>();
         [TestMethod] public void IsTested() => isAllTested(assembly);
-        private static string testAssembly => "Abc.Tests";
-        protected virtual string assembly => "Abc";
+        private static string testAssembly => "isa3.Tests";
+        protected virtual string assembly => "isa3";
         protected virtual string nameSpace(string name) => $"{assembly}.{name}";
         protected virtual void isAllTested(string assembly, string namespaceName = null)
         {
