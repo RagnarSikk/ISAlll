@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31717.71
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "soft", "soft\soft.csproj", "{325E4939-D183-418A-9225-B972D66C1A70}"
 EndProject
@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pages", "Pages\Pages.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "isa3.Infra\Infra.csproj", "{7A186403-4B33-44C0-B01A-863C05A4955E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aids", "Aids\Aids.csproj", "{A136F4EF-78B5-4224-BF8D-3A252CD473AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aids", "Aids\Aids.csproj", "{A136F4EF-78B5-4224-BF8D-3A252CD473AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{01DFBB1A-A170-43EB-B5C1-8084C6DFB3EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{A136F4EF-78B5-4224-BF8D-3A252CD473AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A136F4EF-78B5-4224-BF8D-3A252CD473AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A136F4EF-78B5-4224-BF8D-3A252CD473AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DFBB1A-A170-43EB-B5C1-8084C6DFB3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DFBB1A-A170-43EB-B5C1-8084C6DFB3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DFBB1A-A170-43EB-B5C1-8084C6DFB3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DFBB1A-A170-43EB-B5C1-8084C6DFB3EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
