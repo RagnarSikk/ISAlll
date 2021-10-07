@@ -22,6 +22,12 @@ namespace isa3.Tests.Data.People
         public void EmailTest() { Assert.Inconclusive(); }
         [TestMethod]
         public void PhoneNumberTest() { Assert.Inconclusive(); }
+        [TestMethod]
+        public void FirstMidNameTest() { Assert.Inconclusive(); }
+        [TestMethod]
+        public void GenderTest() { Assert.Inconclusive(); }
+        [TestMethod]
+        public void DateOfBirthTest() { Assert.Inconclusive(); }
     }
 
 }
