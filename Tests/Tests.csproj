@@ -24,7 +24,6 @@
     <Folder Include="Facade\People\" />
     <Folder Include="Facade\Others\" />
     <Folder Include="Infra\" />
-    <Folder Include="Aids\" />
     <Folder Include="Core\" />
     <Folder Include="Infra\" />
     <Folder Include="Facade\" />
