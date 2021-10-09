@@ -8,7 +8,7 @@ namespace isa3.Data.People
     {
 
         public DateTime HireDate { get; set; }
-        public string certifications { get; set; }
+        public string Certifications { get; set; }
 
         // Coach, Nutritionist, Therapist, Psychologist should def have HireDate in common
         // What about Admins, do we hire them? Athletes, do we hire them? mby should rename "HireDate" 

@@ -7,5 +7,9 @@ namespace isa3.Tests.Data.People
     [TestClass]
     public class PersonRoleDataTests : SealedTests<PersonRoleData, PersonData>
     {
+        [TestMethod]
+        public void HireDateTest() { Assert.Inconclusive(); }
+        [TestMethod]
+        public void CertificationsTest() { Assert.Inconclusive(); }
     }
 }
