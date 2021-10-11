@@ -12,7 +12,7 @@ namespace isa3.Domain.Others
     {
         public Nutritionist Nutritionist { get; set; }
         public Therapist Therapist { get; set; }
-        public Physiotherapist physiotherapist { get; set; }
+        public Physiotherapist Physiotherapist { get; set; }
 
     }
 }
