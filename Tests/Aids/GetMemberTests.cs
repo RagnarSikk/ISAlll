@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace isa3.Tests.Aids
 {
     [TestClass]
-    public class GetMemberTests
+    public class GetMemberTests 
     {
 
         private readonly string stringField = null;

@@ -8,7 +8,7 @@ using isa3.Data.Common;
 namespace isa3.Tests.Data.Common
 {
     [TestClass]
-    public class BaseDataTests
+    public class BaseDataTests  : SealedTests<BaseData, System.Object>
     {
 
         [TestMethod]
@@ -24,6 +24,26 @@ namespace isa3.Tests.Data.Common
         public void ValidToTest() { Assert.Inconclusive(); }
         [TestMethod]
         public void ValidFromTest() { Assert.Inconclusive(); }
+    }
+    [TestClass]
+    public class BaseEntityTests
+    {
+    }
+    [TestClass]
+    public class IUniqueNamedDataTests
+    {
+    }
+    [TestClass]
+    public class NamedEntityDataTests
+    {
+    }
+    [TestClass]
+    public class PeriodDataTests
+    {
+    }
+    [TestClass]
+    public class UniqueEntityDataTests
+    {
     }
 
 }
