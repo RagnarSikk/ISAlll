@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace isa3.Tests
 {
-    public abstract class SealedTests<TClass, BaseClass> : ClassTests<TClass, BaseClass>
-        where TClass : class
+    public abstract class AbstractTests<TClass, TBaseClass> :
+        BaseClassTests<TClass, TBaseClass> where TClass : class
     {
-        [TestMethod] public void IsNotSealed() => isFalse(type.IsSealed);
+        [TestMethod] public void IsAbstract() => Assert.IsTrue(type.IsAbstract);
+
     }
 }
