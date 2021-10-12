@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using isa3.Data.Others;
+using isa3.Domain.Others;
 
 namespace isa3.Infra
 {
@@ -16,6 +18,8 @@ namespace isa3.Infra
         {
         }
 
+        public DbSet<TrainingData> TrainingData { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -25,6 +29,7 @@ namespace isa3.Infra
         public static void InitializeTables(ModelBuilder modelBuilder)
         {
             //siia tulevad andmebaasitabelid
+            modelBuilder.Entity<TrainingData>().ToTable("Trainings");
         }
     }
 }

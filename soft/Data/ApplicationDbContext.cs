@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using isa3.Data.Others;
 
 namespace isa3.soft.Data
 {
@@ -9,5 +10,6 @@ namespace isa3.soft.Data
             : base(options)
         {
         }
+        public DbSet<isa3.Data.Others.TrainingData> TrainingData { get; set; }
     }
 }

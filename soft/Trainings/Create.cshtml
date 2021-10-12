@@ -1,0 +1,79 @@
+﻿@page
+@model isa3.soft.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TrainingData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TrainingData.Name" class="control-label"></label>
+                <input asp-for="TrainingData.Name" class="form-control" />
+                <span asp-validation-for="TrainingData.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.Description" class="control-label"></label>
+                <input asp-for="TrainingData.Description" class="form-control" />
+                <span asp-validation-for="TrainingData.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.LocationOfTraining" class="control-label"></label>
+                <input asp-for="TrainingData.LocationOfTraining" class="form-control" />
+                <span asp-validation-for="TrainingData.LocationOfTraining" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.AvailableEquipment" class="control-label"></label>
+                <input asp-for="TrainingData.AvailableEquipment" class="form-control" />
+                <span asp-validation-for="TrainingData.AvailableEquipment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.MaxNumberOfAthletes" class="control-label"></label>
+                <input asp-for="TrainingData.MaxNumberOfAthletes" class="form-control" />
+                <span asp-validation-for="TrainingData.MaxNumberOfAthletes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.MinNumberOfAthletes" class="control-label"></label>
+                <input asp-for="TrainingData.MinNumberOfAthletes" class="form-control" />
+                <span asp-validation-for="TrainingData.MinNumberOfAthletes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.NumberOfAthletes" class="control-label"></label>
+                <input asp-for="TrainingData.NumberOfAthletes" class="form-control" />
+                <span asp-validation-for="TrainingData.NumberOfAthletes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.NumberOfCoachesRequired" class="control-label"></label>
+                <input asp-for="TrainingData.NumberOfCoachesRequired" class="form-control" />
+                <span asp-validation-for="TrainingData.NumberOfCoachesRequired" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.ValidFrom" class="control-label"></label>
+                <input asp-for="TrainingData.ValidFrom" class="form-control" />
+                <span asp-validation-for="TrainingData.ValidFrom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingData.ValidTo" class="control-label"></label>
+                <input asp-for="TrainingData.ValidTo" class="form-control" />
+                <span asp-validation-for="TrainingData.ValidTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -9,7 +9,7 @@ namespace isa3.Data.Others
         public string Name { get; set; }
         public string Description { get; set; }
         public string LocationOfTraining { get; set; }
-        public List<string> AvailableEquipment { get; set; } //Todo: Kuidas panna kirja, mis
+        public string AvailableEquipment { get; set; } //Todo: Kuidas panna kirja, mis
         public int MaxNumberOfAthletes { get; set; }         //varustus ja kui palju on kasutuseks olemas?
         public int MinNumberOfAthletes { get; set; }
         public int NumberOfAthletes { get; set; }
