@@ -1,0 +1,13 @@
+﻿@page
+@using isa3.Core.Extensions
+@model isa3.soft.Services.DetailsModel
+
+@{
+    ViewData["Page"] = "Services";
+    Layout = "_Details";
+}
+
+@Html.Show(model => model.ServicesData.Name)
+@Html.Show(model => model.ServicesData.Description)
+@Html.Show(model => model.ServicesData.Type)
+@Html.Show(model => model.ServicesData.Cost)

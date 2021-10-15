@@ -1,0 +1,13 @@
+﻿@page
+@using isa3.Core.Extensions
+@model isa3.soft.Services.CreateModel
+
+@{
+    ViewData["Page"] = "Services";
+    Layout = "_Create";
+}
+
+@Html.Editor(model => model.ServicesData.Name)
+@Html.Editor(model => model.ServicesData.Description)
+@Html.Editor(model => model.ServicesData.Type)
+@Html.Editor(model => model.ServicesData.Cost)
