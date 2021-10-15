@@ -1,0 +1,14 @@
+﻿@page
+@using isa3.Core.Extensions
+@model isa3.soft.Equipment.DetailsModel
+
+@{
+    Layout = "_Details";
+    ViewData["ItemId"] = Model.EquipmentData.Id;
+    ViewData["Page"] = "Equipment";
+}
+
+    @Html.Show(model => model.EquipmentData.Name)
+    @Html.Show(model => model.EquipmentData.Description)
+    @Html.Show(model =>model.EquipmentData.AmountAvailable)
+    @Html.Show(model =>model.EquipmentData.AmountInUsing)

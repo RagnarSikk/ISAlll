@@ -11,5 +11,7 @@ namespace isa3.soft.Data
         {
         }
         public DbSet<isa3.Data.Others.TrainingData> TrainingData { get; set; }
+
+        public DbSet<isa3.Data.Others.EquipmentData> EquipmentData { get; set; }
     }
 }

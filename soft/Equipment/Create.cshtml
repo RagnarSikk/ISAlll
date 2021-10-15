@@ -1,0 +1,13 @@
+﻿@page
+@using isa3.Core.Extensions
+@model isa3.soft.Equipment.CreateModel
+
+@{
+    ViewData["Page"] = "Equipment";
+    Layout = "_Create";
+}
+
+@Html.Editor(model => model.EquipmentData.Name)
+@Html.Editor(model => model.EquipmentData.Description)
+@Html.Editor(model => model.EquipmentData.AmountAvailable)
+@Html.Editor(model => model.EquipmentData.AmountInUsing)

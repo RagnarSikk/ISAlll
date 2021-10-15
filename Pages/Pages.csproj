@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Facade\Facade.csproj" />
     <ProjectReference Include="..\isa3.Infra\Infra.csproj" />
   </ItemGroup>
 

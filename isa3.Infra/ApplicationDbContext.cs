@@ -19,6 +19,7 @@ namespace isa3.Infra
         }
 
         public DbSet<TrainingData> TrainingData { get; set; }
+        public DbSet<EquipmentData> EquipmentData { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,6 +31,7 @@ namespace isa3.Infra
         {
             //siia tulevad andmebaasitabelid
             modelBuilder.Entity<TrainingData>().ToTable("Trainings");
+            modelBuilder.Entity<EquipmentData>().ToTable("Equipments");
         }
     }
 }
