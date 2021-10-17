@@ -1,4 +1,5 @@
-﻿using System;
+﻿using isa3.Data.Others;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,24 @@ namespace isa3.Infra
     {
         public static void Initialize(ApplicationDbContext context)
         {
+            if (context.TrainingData.Any())
+            {
+                return;   // DB has been seeded
+            }
+
+            var trainingdata = new TrainingData[]
+            {
+                new()
+               {
+                   Id = 0, Name = "HIIT", Description = "Intensiivne 60min", LocationOfTraining = "Tallinn",
+                   AvailableEquipment = "kk",
+
+               },
+                
+            };
+
+            context.TrainingData.AddRange(trainingdata);
+            context.SaveChanges();
         }
     }
 }
