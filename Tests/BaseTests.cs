@@ -9,10 +9,9 @@ using System.Threading.Tasks;
 
 namespace isa3.Tests
 {
-    public class BaseTests : TestAssertions
+    public class BaseTests : TestAids
     {
         protected Type type;
-        protected object objUnderTests;
 
         [TestCleanup]
         public virtual void TestCleanup()

@@ -7,6 +7,7 @@ namespace isa3.Tests.Data.People
     [TestClass]
     public class AdminstratorDataTests : SealedTests<AdminstratorData, PersonRoleData>
     {
+        [TestMethod] public void AdministartorIdTest() => isProperty<string>();
     }
     //TODO: Gunnar andis video 103 lopus kaks taski, mille eest punkte koguda
     //1) Testclass voiks nime katte saada klassinimest ehk midagi sellist > 
