@@ -1,15 +1,20 @@
-﻿using System.Threading.Tasks;
-using isa3.Data.Others;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using isa3.Data.Others;
+using isa3.soft.Data;
 
-namespace isa3.soft.Equipments
+namespace isa3.soft.Equipment
 {
     public class CreateModel : PageModel
     {
-        private readonly Data.ApplicationDbContext _context;
+        private readonly isa3.soft.Data.ApplicationDbContext _context;
 
-        public CreateModel(Data.ApplicationDbContext context)
+        public CreateModel(isa3.soft.Data.ApplicationDbContext context)
         {
             _context = context;
         }
