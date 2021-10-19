@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using isa3.Data.Others;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using isa3.Data.Others;
-using isa3.soft.Data;
 
-namespace isa3.soft.Equipment
+namespace isa3.soft.Equipments
 {
     public class IndexModel : PageModel
     {

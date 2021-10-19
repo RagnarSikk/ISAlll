@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using isa3.Data.Others;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using isa3.Data.Others;
-using isa3.soft.Data;
 
-namespace isa3.soft.Equipment
+namespace isa3.soft.Equipments
 {
     public class DetailsModel : PageModel
     {
