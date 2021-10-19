@@ -1,0 +1,19 @@
+﻿@page
+@using isa3.Core.Extensions
+@model isa3.soft.Coaches.DetailsModel
+
+
+@{
+    ViewData["Page"] = "Coaches";
+    Layout = "_Details";
+}
+
+@Html.Show(model => model.CoachData.FirstMidName)
+@Html.Show(model => model.CoachData.LastName)
+@Html.Show(model => model.CoachData.DateOfBirth)
+@Html.Show(model => model.CoachData.Email)
+@Html.Show(model => model.CoachData.PhoneNumber)
+@Html.Show(model => model.CoachData.HireDate)
+@Html.Show(model => model.CoachData.Certifications)
+
+@* TODO: hiljem võiks lisada ShowTable kus näitab mis trenne annab vms *@
