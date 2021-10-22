@@ -1,4 +1,5 @@
 ﻿using isa3.Aids.Classes;
+using isa3.Aids.Extensions;
 using isa3.Aids.Reflections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -25,6 +26,18 @@ namespace isa3.Tests
             if (type == null) notTested(notSpecifiedMsg);
             var testClassName = GetType().Name;
             isTrue(testClassName.StartsWith(testableClassName));
+        }
+        [TestMethod]
+        public virtual void IsClassDetectableTest()
+        {
+            var testClassName = GetType().FullName;
+            var testableClassName = testClassName.Replace("Tests", string.Empty);
+            testableClassName = testableClassName.Replace("..", ".");
+            var solutionName = testableClassName.GetHead();
+            var projectName = testableClassName.GetTail().GetHead();
+            var l = GetSolution.TypesForAssembly($"{solutionName}.{projectName}");
+            var expectedType = l.Where(x => x.FullName == testableClassName).ToList()[0];
+            areEqual(expectedType, type);
         }
         [TestMethod]
         public virtual void IsTested()
