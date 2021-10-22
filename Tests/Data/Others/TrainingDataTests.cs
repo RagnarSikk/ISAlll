@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace isa3.Tests.Data.Others
 {
     [TestClass]
-    public class TrainingDataTests : SealedTests<TrainingData, BaseData>
+    public class TrainingDataTests : SealedTests<BaseData>
     {
         [TestMethod]
         public void NameTest()

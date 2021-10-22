@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace isa3.Tests.Data.People
 {
     [TestClass]
-    public class AthleteDataTests : SealedTests<AthleteData, PersonData>
+    public class AthleteDataTests : SealedTests<PersonData>
     {
         [TestMethod]
         public void WeightTest() {

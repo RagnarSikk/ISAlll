@@ -28,7 +28,7 @@ namespace isa3.Tests
             isTrue(testClassName.StartsWith(testableClassName));
         }
         [TestMethod]
-        public virtual void IsClassDetectableTest()
+        protected Type getTestableClassType()
         {
             var testClassName = GetType().FullName;
             var testableClassName = testClassName.Replace("Tests", string.Empty);
@@ -37,7 +37,7 @@ namespace isa3.Tests
             var projectName = testableClassName.GetTail().GetHead();
             var l = GetSolution.TypesForAssembly($"{solutionName}.{projectName}");
             var expectedType = l.Where(x => x.FullName == testableClassName).ToList()[0];
-            areEqual(expectedType, type);
+            return expectedType;
         }
         [TestMethod]
         public virtual void IsTested()

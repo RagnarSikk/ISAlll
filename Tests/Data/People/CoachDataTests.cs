@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace isa3.Tests.Data.People
 {
     [TestClass]
-    public class CoachDataTests : SealedTests<CoachData, PersonRoleData>
+    public class CoachDataTests : SealedTests<PersonRoleData>
     {
     }
 

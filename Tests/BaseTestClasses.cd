@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="isa3.Tests.AbstractTests&lt;TClass, TBaseClass&gt;">
+  <Class Name="isa3.Tests.AbstractTests&lt;TBaseClass&gt;">
     <Position X="2.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -14,7 +14,7 @@
       <FileName>AssemblyTests.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="isa3.Tests.BaseClassTests&lt;TClass, TBaseClass&gt;">
+  <Class Name="isa3.Tests.BaseClassTests&lt;TBaseClass&gt;">
     <Position X="2.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAIgAAAAAAAiAAAAAAAAAAAAABAAAAAAA=</HashCode>
@@ -24,18 +24,18 @@
   <Class Name="isa3.Tests.BaseTests">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAAABAAAAAAAgAgAAAAAAAAABUAYAAAAAAECAAAE=</HashCode>
+      <HashCode>AIAAAAABAAAAAAAgAgAAAAAAAAABRAYAAAAAAECAAAE=</HashCode>
       <FileName>BaseTests.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="isa3.Tests.ClassTests&lt;TClass, TBaseClass&gt;">
+  <Class Name="isa3.Tests.ClassTests&lt;TBaseClass&gt;">
     <Position X="4.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ClassTests.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="isa3.Tests.SealedTests&lt;TClass, BaseClass&gt;">
+  <Class Name="isa3.Tests.SealedTests&lt;BaseClass&gt;">
     <Position X="4.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -49,10 +49,10 @@
       <FileName>TestAssertions.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="isa3.Tests.TestAids">
+  <Class Name="isa3.Tests.TestAids" Collapsed="true">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAAAAAQAAAAAAAAAACAAAAAQAAAAA=</HashCode>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAQAAAAAAAEAACAAAAAQAAAAA=</HashCode>
       <FileName>TestAids.cs</FileName>
     </TypeIdentifier>
   </Class>

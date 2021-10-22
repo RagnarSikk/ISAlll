@@ -8,7 +8,7 @@ using isa3.Data.Common;
 namespace isa3.Tests.Data.Common
 {
     [TestClass]
-    public class BaseDataTests  : SealedTests<BaseData, System.Object>
+    public class BaseDataTests  : SealedTests<System.Object>
     {
 
         [TestMethod]

@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace isa3.Tests.Data.People
 {
     [TestClass]
-    public class PersonRoleDataTests : SealedTests<PersonRoleData, PersonData>
+    public class PersonRoleDataTests : SealedTests<PersonData>
     {
         [TestMethod]
         public void HireDateTest() { Assert.Inconclusive(); }

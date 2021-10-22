@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace isa3.Tests.Data.People
 {
     [TestClass]
-    public class AdminstratorDataTests : SealedTests<AdminstratorData, PersonRoleData>
+    public class AdminstratorDataTests : SealedTests<PersonRoleData>
     {
         [TestMethod] public void AdministartorIdTest() => isProperty<string>();
     }

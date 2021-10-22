@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace isa3.Tests.Data.Others
 {
     [TestClass]
-    public class PaymentDataTests : SealedTests<PaymentData, BaseData>
+    public class PaymentDataTests : SealedTests<BaseData>
     {
         [TestMethod]
         public void AmountTest()

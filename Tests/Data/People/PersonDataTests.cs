@@ -9,7 +9,7 @@ using isa3.Data.People;
 namespace isa3.Tests.Data.People
 {
     [TestClass]
-    public class PersonDataTests : SealedTests<PersonData, BaseData>
+    public class PersonDataTests : SealedTests<BaseData>
     {
         [TestMethod]
         public void LastNameTest() { Assert.Inconclusive(); }

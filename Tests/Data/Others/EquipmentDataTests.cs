@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace isa3.Tests.Data.Others
 {
     [TestClass]
-    public class EquipmentDataTests : SealedTests<EquipmentData, BaseData>
+    public class EquipmentDataTests : SealedTests<BaseData>
     {
         [TestMethod]
         public void NameTest()
