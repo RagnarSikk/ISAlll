@@ -1,0 +1,79 @@
+﻿@page
+@model isa3.soft.Nutritionists.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>NutritionistData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.HireDate" class="control-label"></label>
+                <input asp-for="NutritionistData.HireDate" class="form-control" />
+                <span asp-validation-for="NutritionistData.HireDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.Certifications" class="control-label"></label>
+                <input asp-for="NutritionistData.Certifications" class="form-control" />
+                <span asp-validation-for="NutritionistData.Certifications" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.LastName" class="control-label"></label>
+                <input asp-for="NutritionistData.LastName" class="form-control" />
+                <span asp-validation-for="NutritionistData.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.FirstMidName" class="control-label"></label>
+                <input asp-for="NutritionistData.FirstMidName" class="form-control" />
+                <span asp-validation-for="NutritionistData.FirstMidName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.PhoneNumber" class="control-label"></label>
+                <input asp-for="NutritionistData.PhoneNumber" class="form-control" />
+                <span asp-validation-for="NutritionistData.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.Email" class="control-label"></label>
+                <input asp-for="NutritionistData.Email" class="form-control" />
+                <span asp-validation-for="NutritionistData.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.Gender" class="control-label"></label>
+                <input asp-for="NutritionistData.Gender" class="form-control" />
+                <span asp-validation-for="NutritionistData.Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.DateOfBirth" class="control-label"></label>
+                <input asp-for="NutritionistData.DateOfBirth" class="form-control" />
+                <span asp-validation-for="NutritionistData.DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.ValidFrom" class="control-label"></label>
+                <input asp-for="NutritionistData.ValidFrom" class="form-control" />
+                <span asp-validation-for="NutritionistData.ValidFrom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NutritionistData.ValidTo" class="control-label"></label>
+                <input asp-for="NutritionistData.ValidTo" class="form-control" />
+                <span asp-validation-for="NutritionistData.ValidTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -6,22 +6,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using isa3.Data.Others;
+using isa3.Data.People;
 using isa3.Infra;
 
-namespace isa3.soft.Equipment
+namespace isa3.soft.Athletes
 {
     public class EditModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        private readonly isa3.Infra.ApplicationDbContext _context;
 
-        public EditModel(ApplicationDbContext context)
+        public EditModel(isa3.Infra.ApplicationDbContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public EquipmentData EquipmentData { get; set; }
+        public AthleteData AthleteData { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,9 +30,9 @@ namespace isa3.soft.Equipment
                 return NotFound();
             }
 
-            EquipmentData = await _context.EquipmentData.FirstOrDefaultAsync(m => m.Id == id);
+            AthleteData = await _context.AthleteData.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (EquipmentData == null)
+            if (AthleteData == null)
             {
                 return NotFound();
             }
@@ -48,7 +48,7 @@ namespace isa3.soft.Equipment
                 return Page();
             }
 
-            _context.Attach(EquipmentData).State = EntityState.Modified;
+            _context.Attach(AthleteData).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace isa3.soft.Equipment
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EquipmentDataExists(EquipmentData.Id))
+                if (!AthleteDataExists(AthleteData.Id))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace isa3.soft.Equipment
             return RedirectToPage("./Index");
         }
 
-        private bool EquipmentDataExists(int id)
+        private bool AthleteDataExists(int id)
         {
-            return _context.EquipmentData.Any(e => e.Id == id);
+            return _context.AthleteData.Any(e => e.Id == id);
         }
     }
 }

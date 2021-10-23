@@ -20,6 +20,10 @@ namespace isa3.Infra
         public DbSet<EquipmentData> EquipmentData { get; set; }
         public DbSet<CoachData> CoachData { get; set; }
         public DbSet<ServicesData> ServicesData { get; set; }
+        public DbSet<AthleteData> AthleteData { get; set; }
+        public DbSet<NutritionistData> NutritionistData { get; set; }
+        public DbSet<TherapistData> TherapistData { get; set; }
+        public DbSet<PhysiotherapistData> PhysiotherapistData { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

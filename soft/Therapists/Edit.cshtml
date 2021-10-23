@@ -1,0 +1,80 @@
+﻿@page
+@model isa3.soft.Therapists.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TherapistData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TherapistData.HireDate" class="control-label"></label>
+                <input asp-for="TherapistData.HireDate" class="form-control" />
+                <span asp-validation-for="TherapistData.HireDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TherapistData.Certifications" class="control-label"></label>
+                <input asp-for="TherapistData.Certifications" class="form-control" />
+                <span asp-validation-for="TherapistData.Certifications" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TherapistData.LastName" class="control-label"></label>
+                <input asp-for="TherapistData.LastName" class="form-control" />
+                <span asp-validation-for="TherapistData.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TherapistData.FirstMidName" class="control-label"></label>
+                <input asp-for="TherapistData.FirstMidName" class="form-control" />
+                <span asp-validation-for="TherapistData.FirstMidName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TherapistData.PhoneNumber" class="control-label"></label>
+                <input asp-for="TherapistData.PhoneNumber" class="form-control" />
+                <span asp-validation-for="TherapistData.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TherapistData.Email" class="control-label"></label>
+                <input asp-for="TherapistData.Email" class="form-control" />
+                <span asp-validation-for="TherapistData.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TherapistData.Gender" class="control-label"></label>
+                <input asp-for="TherapistData.Gender" class="form-control" />
+                <span asp-validation-for="TherapistData.Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TherapistData.DateOfBirth" class="control-label"></label>
+                <input asp-for="TherapistData.DateOfBirth" class="form-control" />
+                <span asp-validation-for="TherapistData.DateOfBirth" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="TherapistData.Id" />
+            <div class="form-group">
+                <label asp-for="TherapistData.ValidFrom" class="control-label"></label>
+                <input asp-for="TherapistData.ValidFrom" class="form-control" />
+                <span asp-validation-for="TherapistData.ValidFrom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TherapistData.ValidTo" class="control-label"></label>
+                <input asp-for="TherapistData.ValidTo" class="form-control" />
+                <span asp-validation-for="TherapistData.ValidTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

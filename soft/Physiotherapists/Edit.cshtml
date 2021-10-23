@@ -1,0 +1,80 @@
+﻿@page
+@model isa3.soft.Physiotherapists.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>PhysiotherapistData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.HireDate" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.HireDate" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.HireDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.Certifications" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.Certifications" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.Certifications" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.LastName" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.LastName" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.FirstMidName" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.FirstMidName" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.FirstMidName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.PhoneNumber" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.Email" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.Email" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.Gender" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.Gender" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.DateOfBirth" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.DateOfBirth" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.DateOfBirth" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="PhysiotherapistData.Id" />
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.ValidFrom" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.ValidFrom" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.ValidFrom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysiotherapistData.ValidTo" class="control-label"></label>
+                <input asp-for="PhysiotherapistData.ValidTo" class="form-control" />
+                <span asp-validation-for="PhysiotherapistData.ValidTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

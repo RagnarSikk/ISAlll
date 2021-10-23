@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using isa3.Data.People;
+using isa3.Infra;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using isa3.Data.Others;
-using isa3.Infra;
 
-namespace isa3.soft.Equipment
+namespace isa3.soft.Nutritionists
 {
     public class CreateModel : PageModel
     {
@@ -25,7 +21,7 @@ namespace isa3.soft.Equipment
         }
 
         [BindProperty]
-        public EquipmentData EquipmentData { get; set; }
+        public NutritionistData NutritionistData { get; set; }
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
@@ -35,7 +31,7 @@ namespace isa3.soft.Equipment
                 return Page();
             }
 
-            _context.EquipmentData.Add(EquipmentData);
+            _context.NutritionistData.Add(NutritionistData);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
