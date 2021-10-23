@@ -1,14 +1,36 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace isa3.soft.Migrations
+namespace isa3.Infra.Migrations
 {
-    public partial class ComplexDataModel : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "EquipmentData",
+                name: "CoachData",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ValidFrom = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ValidTo = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    FirstMidName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    HireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Certifications = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CoachData", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Equipments",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -22,7 +44,7 @@ namespace isa3.soft.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EquipmentData", x => x.Id);
+                    table.PrimaryKey("PK_Equipments", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -44,7 +66,7 @@ namespace isa3.soft.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TrainingData",
+                name: "Trainings",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -62,20 +84,23 @@ namespace isa3.soft.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TrainingData", x => x.Id);
+                    table.PrimaryKey("PK_Trainings", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "EquipmentData");
+                name: "CoachData");
+
+            migrationBuilder.DropTable(
+                name: "Equipments");
 
             migrationBuilder.DropTable(
                 name: "ServicesData");
 
             migrationBuilder.DropTable(
-                name: "TrainingData");
+                name: "Trainings");
         }
     }
 }

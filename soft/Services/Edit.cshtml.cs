@@ -7,15 +7,15 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using isa3.Data.Others;
-using isa3.soft.Data;
+using isa3.Infra;
 
 namespace isa3.soft.Services
 {
     public class EditModel : PageModel
     {
-        private readonly isa3.soft.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public EditModel(isa3.soft.Data.ApplicationDbContext context)
+        public EditModel(ApplicationDbContext context)
         {
             _context = context;
         }

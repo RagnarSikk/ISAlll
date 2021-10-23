@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using isa3.Data.Others;
-using isa3.soft.Data;
+using isa3.Infra;
 
 namespace isa3.soft
 {
     public class IndexModel : PageModel
     {
-        private readonly isa3.soft.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public IndexModel(isa3.soft.Data.ApplicationDbContext context)
+        public IndexModel(ApplicationDbContext context)
         {
             _context = context;
         }

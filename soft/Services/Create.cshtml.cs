@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using isa3.Data.Others;
-using isa3.soft.Data;
+using isa3.Infra;
 
 namespace isa3.soft.Services
 {
     public class CreateModel : PageModel
     {
-        private readonly isa3.soft.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public CreateModel(isa3.soft.Data.ApplicationDbContext context)
+        public CreateModel(ApplicationDbContext context)
         {
             _context = context;
         }

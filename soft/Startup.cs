@@ -1,4 +1,4 @@
-using isa3.soft.Data;
+using isa3.Infra;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
