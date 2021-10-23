@@ -1,0 +1,79 @@
+﻿@page
+@model isa3.soft.Areas.Personal.Therapists.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TherapistData</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.HireDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.HireDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.Certifications)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.Certifications)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.FirstMidName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.FirstMidName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.Gender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.Gender)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.DateOfBirth)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.DateOfBirth)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.ValidFrom)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.ValidFrom)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TherapistData.ValidTo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TherapistData.ValidTo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.TherapistData.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

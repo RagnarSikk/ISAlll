@@ -1,0 +1,18 @@
+﻿@page
+@using isa3.Core.Extensions
+@model isa3.soft.Areas.Personal.Coaches.EditModel
+
+
+@{
+    ViewData["Page"] = "Coaches";
+    Layout = "_Edit";
+}
+@* TODO: kas hireDate, DateOfBirthday saab ka muuta? *@
+
+@Html.Editor(model => model.CoachData.FirstMidName)
+@Html.Editor(model => model.CoachData.LastName)
+@Html.Editor(model => model.CoachData.DateOfBirth)
+@Html.Editor(model => model.CoachData.Email)
+@Html.Editor(model => model.CoachData.PhoneNumber)
+@Html.Editor(model => model.CoachData.HireDate)
+@Html.Editor(model => model.CoachData.Certifications)
