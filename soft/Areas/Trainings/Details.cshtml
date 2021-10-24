@@ -1,11 +1,10 @@
 ﻿@page
 @using isa3.Core.Extensions
-@model isa3.soft.DetailsModel
+@model isa3.soft.Areas.Trainings.DetailsModel
 
 @{
-    Layout = "_Details";
-    ViewData["ItemId"] = Model.TrainingData.Id;
     ViewData["Page"] = "Trainings";
+    Layout = "_Details";
 }
 
 @Html.Show(model => model.TrainingData.Name)
@@ -13,7 +12,6 @@
 @Html.Show(model => model.TrainingData.LocationOfTraining)
 @Html.Show(model => model.TrainingData.AvailableEquipment)
 @Html.Show(model => model.TrainingData.MaxNumberOfAthletes)
-@Html.Show(model => model.TrainingData.MinNumberOfAthletes)
 @Html.Show(model => model.TrainingData.NumberOfAthletes)
 @Html.Show(model => model.TrainingData.NumberOfCoachesRequired)
 @Html.Show(model => model.TrainingData.ValidFrom)

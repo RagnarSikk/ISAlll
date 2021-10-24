@@ -1,6 +1,6 @@
 ﻿@page
 @using isa3.Core.Extensions
-@model isa3.soft.EditModel
+@model isa3.soft.Areas.Trainings.EditModel
 
 @{
     ViewData["Page"] = "Trainings";
@@ -9,10 +9,10 @@
 
 @Html.Editor(model => model.TrainingData.Name)
 @Html.Editor(model => model.TrainingData.Description)
-@Html.Editor(model => model.TrainingData.LocationOfTraining) @*võiks teha nt dropdown listi*@
-@Html.Editor(model => model.TrainingData.AvailableEquipment) @*siin võiks teha nt linnukestega või samuti dropdown listi*@
+@Html.Editor(model => model.TrainingData.LocationOfTraining)
+@Html.Editor(model => model.TrainingData.AvailableEquipment)
 @Html.Editor(model => model.TrainingData.MaxNumberOfAthletes)
-@Html.Editor(model => model.TrainingData.MinNumberOfAthletes)
+@Html.Editor(model => model.TrainingData.NumberOfAthletes)
 @Html.Editor(model => model.TrainingData.NumberOfCoachesRequired)
 @Html.Editor(model => model.TrainingData.ValidFrom)
 @Html.Editor(model => model.TrainingData.ValidTo)

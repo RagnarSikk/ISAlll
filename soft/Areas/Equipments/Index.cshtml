@@ -1,6 +1,6 @@
 ﻿@page
 @model isa3.soft.Equipments.IndexModel
-
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Index";
 }
@@ -35,32 +35,33 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.EquipmentData) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AmountAvailable)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AmountInUsing)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ValidFrom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ValidTo)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.EquipmentData)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AmountAvailable)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AmountInUsing)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ValidFrom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ValidTo)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

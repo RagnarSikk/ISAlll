@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using isa3.Data.Others;
 using isa3.Infra;
 
-namespace isa3.soft.Services
+namespace isa3.soft.Areas.Services
 {
     public class IndexModel : PageModel
     {

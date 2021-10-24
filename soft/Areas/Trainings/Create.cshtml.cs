@@ -8,13 +8,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using isa3.Data.Others;
 using isa3.Infra;
 
-namespace isa3.soft
+namespace isa3.soft.Areas.Trainings
 {
     public class CreateModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        private readonly isa3.Infra.ApplicationDbContext _context;
 
-        public CreateModel(ApplicationDbContext context)
+        public CreateModel(isa3.Infra.ApplicationDbContext context)
         {
             _context = context;
         }

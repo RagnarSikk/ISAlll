@@ -1,10 +1,10 @@
 ﻿@page
 @using isa3.Core.Extensions
-@model isa3.soft.DeleteModel
+@model isa3.soft.Areas.Trainings.DeleteModel
 
 @{
-    Layout = "_Delete";
     ViewData["Page"] = "Trainings";
+    Layout = "_Delete";
 }
 
 @Html.Show(model => model.TrainingData.Name)
@@ -12,9 +12,7 @@
 @Html.Show(model => model.TrainingData.LocationOfTraining)
 @Html.Show(model => model.TrainingData.AvailableEquipment)
 @Html.Show(model => model.TrainingData.MaxNumberOfAthletes)
-@Html.Show(model => model.TrainingData.MinNumberOfAthletes)
 @Html.Show(model => model.TrainingData.NumberOfAthletes)
 @Html.Show(model => model.TrainingData.NumberOfCoachesRequired)
 @Html.Show(model => model.TrainingData.ValidFrom)
 @Html.Show(model => model.TrainingData.ValidTo)
-       

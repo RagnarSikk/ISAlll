@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using isa3.Data.Others;
 using isa3.Infra;
 
-namespace isa3.soft
+namespace isa3.soft.Areas.Trainings
 {
     public class DetailsModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        private readonly isa3.Infra.ApplicationDbContext _context;
 
-        public DetailsModel(ApplicationDbContext context)
+        public DetailsModel(isa3.Infra.ApplicationDbContext context)
         {
             _context = context;
         }
