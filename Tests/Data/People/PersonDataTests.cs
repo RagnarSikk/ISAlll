@@ -1,16 +1,9 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using isa3.Data;
-using isa3.Data.Common;
-using isa3.Data.People;
+﻿using isa3.Data.Common;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace isa3.Tests.Data.People
-{
+namespace isa3.Tests.Data.People {
     [TestClass]
-    public class PersonDataTests : SealedTests<BaseData>
-    {
+    public class PersonDataTests : SealedTests<BaseData> {
         [TestMethod]
         public void LastNameTest() { Assert.Inconclusive(); }
 

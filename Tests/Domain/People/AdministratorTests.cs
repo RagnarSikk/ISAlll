@@ -1,42 +1,28 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace isa3.Tests.Domain.People
-{
+namespace isa3.Tests.Domain.People {
     [TestClass]
-    public class AdministratorTests
-    {
+    public class AdministratorTests {
     }
     [TestClass]
-    public class AthleteTests
-    {
+    public class AthleteTests {
     }
     [TestClass]
-    public class CoachTests
-    {
+    public class CoachTests {
     }
     [TestClass]
-    public class NutritionistTests
-    {
+    public class NutritionistTests {
     }
     [TestClass]
-    public class PersonTests
-    {
+    public class PersonTests {
     }
     [TestClass]
-    public class PersonRoleTests
-    {
+    public class PersonRoleTests {
     }
     [TestClass]
-    public class PhysiotherapistTests
-    {
+    public class PhysiotherapistTests {
     }
     [TestClass]
-    public class TherapistTests
-    {
+    public class TherapistTests {
     }
 }

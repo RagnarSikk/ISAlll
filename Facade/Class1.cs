@@ -1,8 +1,6 @@
 ﻿
 
-namespace isa3.Facade
-{
-    public class Class1
-    {
+namespace isa3.Facade {
+    public class Class1 {
     }
 }

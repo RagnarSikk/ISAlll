@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace isa3.Data.Common
-{
-    public abstract class BaseEntity
-    {
+namespace isa3.Data.Common {
+    public abstract class BaseEntity {
         public static string Unspecified => Aids.Constants.Word.Unspecified;
         public static DateTime UnspecifiedValidFrom => DateTime.MinValue;
         public static DateTime UnspecifiedValidTo => DateTime.MaxValue;

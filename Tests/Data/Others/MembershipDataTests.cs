@@ -1,20 +1,15 @@
 ﻿using isa3.Data.Common;
-using isa3.Data.Others;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace isa3.Tests.Data.Others
-{
+namespace isa3.Tests.Data.Others {
     [TestClass]
-    public class MembershipDataTests : SealedTests<BaseData>
-    {
+    public class MembershipDataTests : SealedTests<BaseData> {
         [TestMethod]
-        public void MembershipsTest()
-        {
+        public void MembershipsTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void PaymentIdTest()
-        {
+        public void PaymentIdTest() {
             Assert.Inconclusive();
         }
 

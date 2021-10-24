@@ -1,21 +1,17 @@
-﻿using System.Threading.Tasks;
-using isa3.Data.People;
+﻿using isa3.Data.People;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Threading.Tasks;
 
-namespace isa3.soft.Areas.Personal.Physiotherapists
-{
-    public class CreateModel : PageModel
-    {
+namespace isa3.soft.Areas.Personal.Physiotherapists {
+    public class CreateModel : PageModel {
         private readonly isa3.Infra.ApplicationDbContext _context;
 
-        public CreateModel(isa3.Infra.ApplicationDbContext context)
-        {
+        public CreateModel(isa3.Infra.ApplicationDbContext context) {
             _context = context;
         }
 
-        public IActionResult OnGet()
-        {
+        public IActionResult OnGet() {
             return Page();
         }
 
@@ -23,10 +19,8 @@ namespace isa3.soft.Areas.Personal.Physiotherapists
         public PhysiotherapistData PhysiotherapistData { get; set; }
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
-        public async Task<IActionResult> OnPostAsync()
-        {
-            if (!ModelState.IsValid)
-            {
+        public async Task<IActionResult> OnPostAsync() {
+            if (!ModelState.IsValid) {
                 return Page();
             }
 

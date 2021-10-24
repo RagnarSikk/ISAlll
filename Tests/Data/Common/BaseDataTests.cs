@@ -1,19 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using isa3.Data;
-using isa3.Data.Common;
+﻿using isa3.Data.Common;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace isa3.Tests.Data.Common
-{
+namespace isa3.Tests.Data.Common {
     [TestClass]
-    public class BaseDataTests  : SealedTests<System.Object>
-    {
+    public class BaseDataTests : SealedTests<System.Object> {
 
         [TestMethod]
-        public void IdTest()
-        {
+        public void IdTest() {
             var a = 123;
             var o = new BaseData();
             o.Id = 123;
@@ -26,24 +19,19 @@ namespace isa3.Tests.Data.Common
         public void ValidFromTest() { Assert.Inconclusive(); }
     }
     [TestClass]
-    public class BaseEntityTests
-    {
+    public class BaseEntityTests {
     }
     [TestClass]
-    public class IUniqueNamedDataTests
-    {
+    public class IUniqueNamedDataTests {
     }
     [TestClass]
-    public class NamedEntityDataTests
-    {
+    public class NamedEntityDataTests {
     }
     [TestClass]
-    public class PeriodDataTests
-    {
+    public class PeriodDataTests {
     }
     [TestClass]
-    public class UniqueEntityDataTests
-    {
+    public class UniqueEntityDataTests {
     }
 
 }

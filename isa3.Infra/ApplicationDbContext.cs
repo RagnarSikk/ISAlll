@@ -1,16 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using isa3.Data.Others;
+﻿using isa3.Data.Others;
 using isa3.Data.People;
-using isa3.Domain.Others;
+using Microsoft.EntityFrameworkCore;
 
-namespace isa3.Infra
-{
-    public class ApplicationDbContext : DbContext
-    {
+namespace isa3.Infra {
+    public class ApplicationDbContext : DbContext {
         public ApplicationDbContext() : this(
-            new DbContextOptionsBuilder<ApplicationDbContext>().Options)
-        { }
+            new DbContextOptionsBuilder<ApplicationDbContext>().Options) { }
 
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -25,8 +20,7 @@ namespace isa3.Infra
         public DbSet<TherapistData> TherapistData { get; set; }
         public DbSet<PhysiotherapistData> PhysiotherapistData { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
             base.OnModelCreating(modelBuilder);
             //siia tulevad andmebaasitabelid
             modelBuilder.Entity<TrainingData>().ToTable("Trainings");

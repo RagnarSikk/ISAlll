@@ -1,30 +1,23 @@
 ﻿using isa3.Data.Common;
-using isa3.Data.Others;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace isa3.Tests.Data.Others
-{
+namespace isa3.Tests.Data.Others {
     [TestClass]
-    public class ServicesDataTests : SealedTests<BaseData>
-    {
+    public class ServicesDataTests : SealedTests<BaseData> {
         [TestMethod]
-        public void NameTest()
-        {
+        public void NameTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void TypeTest()
-        {
+        public void TypeTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void DescriptionTest()
-        {
+        public void DescriptionTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void CostTest()
-        {
+        public void CostTest() {
             Assert.Inconclusive();
         }
     }

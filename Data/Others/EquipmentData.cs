@@ -1,9 +1,7 @@
 ﻿using isa3.Data.Common;
 
-namespace isa3.Data.Others
-{
-    public class EquipmentData : BaseData
-    {
+namespace isa3.Data.Others {
+    public class EquipmentData : BaseData {
         public string Name { get; set; }
         public string Description { get; set; }
         public int AmountAvailable { get; set; }

@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
-using isa3.Domain.Common;
+﻿using isa3.Domain.Common;
+using System.Collections.Generic;
 
-namespace isa3.Domain.People
-{
-    public class Person : Base
-    {
+namespace isa3.Domain.People {
+    public class Person : Base {
         public List<PersonRole> Roles { get; }
     }
 }

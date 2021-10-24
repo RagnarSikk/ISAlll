@@ -1,18 +1,10 @@
 ﻿using isa3.Data.Others;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace isa3.Infra
-{
-    public static class DbInitializer
-    {
-        public static void Initialize(ApplicationDbContext context)
-        {
-            if (context.TrainingData.Any())
-            {
+namespace isa3.Infra {
+    public static class DbInitializer {
+        public static void Initialize(ApplicationDbContext context) {
+            if (context.TrainingData.Any()) {
                 return;   // DB has been seeded
             }
 
@@ -24,7 +16,7 @@ namespace isa3.Infra
                    AvailableEquipment = "kk",
 
                },
-                
+
             };
 
             context.TrainingData.AddRange(trainingdata);

@@ -1,37 +1,30 @@
-﻿using System;
+﻿using isa3.Aids.Methods;
+using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
-using isa3.Aids.Methods;
 
-namespace isa3.Aids.Reflections
-{
-    public static class GetMember
-    {
-        public static string Name<T>(Expression<Func<T, object>> ex)
-        {
+namespace isa3.Aids.Reflections {
+    public static class GetMember {
+        public static string Name<T>(Expression<Func<T, object>> ex) {
             return Safe.Run(() => name(ex?.Body), string.Empty);
         }
 
-        public static string Name<T, TResult>(Expression<Func<T, TResult>> ex)
-        {
+        public static string Name<T, TResult>(Expression<Func<T, TResult>> ex) {
             return Safe.Run(() => name(ex?.Body), string.Empty);
         }
 
-        public static string Name<T>(Expression<Action<T>> ex)
-        {
+        public static string Name<T>(Expression<Action<T>> ex) {
             return Safe.Run(() => name(ex?.Body), string.Empty);
         }
 
-        public static string DisplayName<T>(Expression<Func<T, object>> ex)
-        {
+        public static string DisplayName<T>(Expression<Func<T, object>> ex) {
             return Safe.Run(() => {
                 var name = Name(ex);
                 return DisplayName<T>(name);
             }, string.Empty);
         }
-        public static string DisplayName<T>(string propertyName)
-        {
+        public static string DisplayName<T>(string propertyName) {
             return Safe.Run(() => {
                 var name = propertyName ?? string.Empty;
                 var p = GetClass.Property<T>(name);
@@ -44,8 +37,7 @@ namespace isa3.Aids.Reflections
             }, string.Empty);
         }
 
-        private static string name(Expression ex)
-        {
+        private static string name(Expression ex) {
             var member = ex as MemberExpression;
             var method = ex as MethodCallExpression;
             var operand = ex as UnaryExpression;
@@ -57,18 +49,15 @@ namespace isa3.Aids.Reflections
             return string.Empty;
         }
 
-        private static string name(MemberExpression ex)
-        {
+        private static string name(MemberExpression ex) {
             return ex?.Member.Name ?? string.Empty;
         }
 
-        private static string name(MethodCallExpression ex)
-        {
+        private static string name(MethodCallExpression ex) {
             return ex?.Method.Name ?? string.Empty;
         }
 
-        private static string name(UnaryExpression ex)
-        {
+        private static string name(UnaryExpression ex) {
             var member = ex?.Operand as MemberExpression;
             var method = ex?.Operand as MethodCallExpression;
 

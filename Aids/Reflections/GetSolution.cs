@@ -1,27 +1,23 @@
-﻿using System;
+﻿using isa3.Aids.Extensions;
+using isa3.Aids.Methods;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using isa3.Aids.Extensions;
-using isa3.Aids.Methods;
 
-namespace isa3.Aids.Reflections
-{
-    internal class GetSolution
-    {
+namespace isa3.Aids.Reflections {
+    internal class GetSolution {
         public static AppDomain Domain => AppDomain.CurrentDomain;
 
         public static List<Assembly> Assemblies =>
             Safe.Run(() => Domain.GetAssemblies().ToList(),
                 new List<Assembly>());
 
-        public static Assembly AssemblyByName(string name)
-        {
+        public static Assembly AssemblyByName(string name) {
             return Safe.Run(() => Assembly.Load(name), (Assembly)null);
         }
 
-        public static List<Type> TypesForAssembly(string assemblyName)
-        {
+        public static List<Type> TypesForAssembly(string assemblyName) {
             var empty = new List<Type>();
             return Safe.Run(() => {
                 var a = AssemblyByName(assemblyName);
@@ -29,8 +25,7 @@ namespace isa3.Aids.Reflections
             }, empty);
         }
 
-        public static List<string> TypeNamesForAssembly(string assemblyName)
-        {
+        public static List<string> TypeNamesForAssembly(string assemblyName) {
             var empty = new List<string>();
             return Safe.Run(() => {
                 var a = TypesForAssembly(assemblyName);

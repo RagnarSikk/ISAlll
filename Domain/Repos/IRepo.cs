@@ -2,10 +2,8 @@
 using System.Threading.Tasks;
 
 
-namespace isa3.Domain.Repos
-{
-    public interface IRepo<T> 
-    {
+namespace isa3.Domain.Repos {
+    public interface IRepo<T> {
         Task<List<T>> Get();
         Task<T> Get(int? id);
         Task Delete(int? id);

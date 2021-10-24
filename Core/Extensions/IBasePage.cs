@@ -1,7 +1,5 @@
-﻿namespace isa3.Core.Extensions
-{
-    public interface IBasePage
-    {
+﻿namespace isa3.Core.Extensions {
+    public interface IBasePage {
         public string SortOrder { get; }
         public string CurrentSort { get; }
         public string CurrentFilter { get; }

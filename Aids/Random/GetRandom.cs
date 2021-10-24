@@ -4,14 +4,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace isa3.Aids.Random
-{
-    public static class GetRandom
-    {
+namespace isa3.Aids.Random {
+    public static class GetRandom {
         private static readonly System.Random r = new System.Random();
 
         public static bool Bool() => Int32() % 2 == 0;
@@ -22,8 +18,7 @@ namespace isa3.Aids.Random
         public static Color Color()
             => System.Drawing.Color.FromArgb(UInt8(), UInt8(), UInt8());
 
-        public static DateTime DateTime(DateTime? min = null, DateTime? max = null)
-        {
+        public static DateTime DateTime(DateTime? min = null, DateTime? max = null) {
             var m = min ?? System.DateTime.MinValue;
             var x = max ?? System.DateTime.MaxValue;
             var d = new DateTime(Int64(m.Ticks, x.Ticks));
@@ -33,8 +28,7 @@ namespace isa3.Aids.Random
         }
 
         public static decimal Decimal(decimal min = decimal.MinValue,
-            decimal max = decimal.MaxValue)
-        {
+            decimal max = decimal.MaxValue) {
             if (min == max) return min;
 
             return Safe.Run(() =>
@@ -42,8 +36,7 @@ namespace isa3.Aids.Random
                 min);
         }
 
-        public static double Double(double min = double.MinValue, double max = double.MaxValue)
-        {
+        public static double Double(double min = double.MinValue, double max = double.MaxValue) {
             if (min.CompareTo(max) == 0) return min;
             Sort.Ascending(ref min, ref max);
             var d = r.NextDouble();
@@ -55,8 +48,7 @@ namespace isa3.Aids.Random
 
         public static T Enum<T>() => (T)Enum(typeof(T));
 
-        public static object Enum(Type t)
-        {
+        public static object Enum(Type t) {
             var count = GetEnum.Count(t);
             var index = Int32(0, count);
 
@@ -72,16 +64,14 @@ namespace isa3.Aids.Random
         public static short Int16(short min = short.MinValue, short max = short.MaxValue)
             => (short)Int32(min, max);
 
-        public static int Int32(int min = int.MinValue, int max = int.MaxValue)
-        {
+        public static int Int32(int min = int.MinValue, int max = int.MaxValue) {
             if (min.CompareTo(max) == 0) return min;
             if (min.CompareTo(max) > 0) return r.Next(max, min);
 
             return r.Next(min, max);
         }
 
-        public static long Int64(long min = long.MinValue, long max = long.MaxValue)
-        {
+        public static long Int64(long min = long.MinValue, long max = long.MaxValue) {
             if (min == max) return min;
 
             return Safe.Run(() =>
@@ -89,8 +79,7 @@ namespace isa3.Aids.Random
                 min);
         }
 
-        public static string String(byte minLenght = 5, byte maxLenght = 10)
-        {
+        public static string String(byte minLenght = 5, byte maxLenght = 10) {
             var b = new StringBuilder();
             var size = UInt8(minLenght, maxLenght);
             for (var i = 0; i < size; i++) b.Append(Char('a', 'z'));
@@ -109,8 +98,7 @@ namespace isa3.Aids.Random
         public static uint UInt32(uint min = uint.MinValue, uint max = uint.MaxValue)
             => Convert.ToUInt32(Double(min, max));
 
-        public static ulong UInt64(ulong min = ulong.MinValue, ulong max = ulong.MaxValue)
-        {
+        public static ulong UInt64(ulong min = ulong.MinValue, ulong max = ulong.MaxValue) {
             if (min == max) return min;
 
             return Safe.Run(() =>
@@ -118,8 +106,7 @@ namespace isa3.Aids.Random
                 min);
         }
 
-        public static object Value(Type t)
-        {
+        public static object Value(Type t) {
             var x = Nullable.GetUnderlyingType(t);
             if (!(x is null)) t = x;
 
@@ -162,8 +149,7 @@ namespace isa3.Aids.Random
             return Object(t);
         }
 
-        public static object Array(Type t)
-        {
+        public static object Array(Type t) {
             if (t is null) return null;
             var listType = typeof(List<>);
             var constructedListType = listType.MakeGenericType(t);
@@ -175,16 +161,14 @@ namespace isa3.Aids.Random
             return array;
         }
 
-        public static T Object<T>()
-        {
+        public static T Object<T>() {
             var o = CreateNew.Instance<T>();
             SetRandom.Values(o);
 
             return o;
         }
 
-        public static object Object(Type t)
-        {
+        public static object Object(Type t) {
             var o = CreateNew.Instance(t);
             SetRandom.Values(o);
 
@@ -197,20 +181,17 @@ namespace isa3.Aids.Random
         public static string Password()
             => $"{String()}{Char('\x20', '\x2f')}{UInt32().ToString()}.{String().ToUpper()}";
 
-        public static List<T> List<T>(Func<T> func)
-        {
+        public static List<T> List<T>(Func<T> func) {
             var list = new List<T>();
             for (var i = 0; i < UInt8(2, 10); i++) list.Add(func());
 
             return list;
         }
 
-        public static object AnyDouble(byte minValue = 0, byte maxValue = 100)
-        {
+        public static object AnyDouble(byte minValue = 0, byte maxValue = 100) {
             var i = UInt8();
 
-            return (i % 10) switch
-            {
+            return (i % 10) switch {
                 0 => Int32(minValue, maxValue),
                 1 => UInt32(minValue, maxValue),
                 2 => Float(minValue, maxValue),
@@ -224,12 +205,10 @@ namespace isa3.Aids.Random
             };
         }
 
-        public static object AnyInt(byte minValue = 0, byte maxValue = 100)
-        {
+        public static object AnyInt(byte minValue = 0, byte maxValue = 100) {
             var i = UInt8();
 
-            return (i % 5) switch
-            {
+            return (i % 5) switch {
                 0 => Int8(0),
                 1 => UInt8(minValue, maxValue),
                 2 => Int16(minValue, maxValue),
@@ -238,12 +217,10 @@ namespace isa3.Aids.Random
             };
         }
 
-        public static object AnyValue()
-        {
+        public static object AnyValue() {
             var i = Int32();
 
-            return (i % 10) switch
-            {
+            return (i % 10) switch {
                 0 => (object)DateTime(),
                 1 => String(),
                 2 => Char(),

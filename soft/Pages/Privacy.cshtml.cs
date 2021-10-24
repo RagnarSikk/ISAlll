@@ -1,19 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace isa3.soft.Pages
-{
-    public class PrivacyModel : PageModel
-    {
+namespace isa3.soft.Pages {
+    public class PrivacyModel : PageModel {
         private readonly ILogger<PrivacyModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
-        {
+        public PrivacyModel(ILogger<PrivacyModel> logger) {
             _logger = logger;
         }
 
-        public void OnGet()
-        {
+        public void OnGet() {
         }
     }
 }

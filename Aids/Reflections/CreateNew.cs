@@ -2,19 +2,12 @@
 using isa3.Aids.Random;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace isa3.Aids.Reflections
-{
-    public static class CreateNew
-    {
-        public static T Instance<T>()
-        {
-            static T f()
-            {
+namespace isa3.Aids.Reflections {
+    public static class CreateNew {
+        public static T Instance<T>() {
+            static T f() {
                 var t = typeof(T);
                 var o = Instance(t);
 
@@ -23,8 +16,7 @@ namespace isa3.Aids.Reflections
             var def = default(T);
             return Safe.Run(f, def);
         }
-        public static object Instance(Type t)
-        {
+        public static object Instance(Type t) {
             return Safe.Run(() => {
                 var constructor = getConstructorInfo(t);
 
@@ -34,23 +26,19 @@ namespace isa3.Aids.Reflections
                 return invoke(constructor, values);
             }, null);
         }
-        private static object invoke(ConstructorInfo ci, object[] values)
-        {
+        private static object invoke(ConstructorInfo ci, object[] values) {
             return values.Length == 0 ? ci.Invoke(null) : ci.Invoke(values);
         }
-        private static object[] setRandomParameters(IEnumerable<ParameterInfo> parameters)
-        {
+        private static object[] setRandomParameters(IEnumerable<ParameterInfo> parameters) {
             var values = new List<object>();
-            foreach (var p in parameters)
-            {
+            foreach (var p in parameters) {
                 var t = p.ParameterType;
                 var value = GetRandom.Value(t);
                 values.Add(value);
             }
             return values.ToArray();
         }
-        private static ConstructorInfo getConstructorInfo(Type t)
-        {
+        private static ConstructorInfo getConstructorInfo(Type t) {
             var constructors = t?.GetConstructors();
 
             if (constructors == null) return null;

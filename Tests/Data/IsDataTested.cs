@@ -1,16 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using isa3.Tests.Data;
 
-namespace isa3.Tests.Data
-{
+namespace isa3.Tests.Data {
     [TestClass]
-    public class IsDataTested : AssemblyTests
-    {
+    public class IsDataTested : AssemblyTests {
         protected override string assembly => "isa3.Data";
         [TestMethod]
         public void IsCommonTested()

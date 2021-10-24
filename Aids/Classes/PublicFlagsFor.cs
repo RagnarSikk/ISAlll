@@ -1,9 +1,7 @@
 ﻿using System.Reflection;
 
-namespace isa3.Aids.Classes
-{
-    public static class PublicFlagsFor
-    {
+namespace isa3.Aids.Classes {
+    public static class PublicFlagsFor {
         private const BindingFlags p = BindingFlags.Public;
         private const BindingFlags i = BindingFlags.Instance;
         private const BindingFlags s = BindingFlags.Static;

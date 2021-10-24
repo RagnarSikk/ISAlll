@@ -1,15 +1,13 @@
-﻿using System;
+﻿using isa3.Aids.Classes;
+using isa3.Aids.Methods;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using isa3.Aids.Classes;
-using isa3.Aids.Methods;
 
-namespace isa3.Aids.Reflections
-{
-    public static class GetClass
-    {
+namespace isa3.Aids.Reflections {
+    public static class GetClass {
         private static string g => "get_";
         private static string s => "set_";
         private static string a => "add_";
@@ -22,8 +20,7 @@ namespace isa3.Aids.Reflections
 
         public static List<MemberInfo> Members(Type type,
             BindingFlags f = PublicFlagsFor.All,
-            bool clean = true)
-        {
+            bool clean = true) {
             if (type is null) return new List<MemberInfo>();
             var l = type.GetMembers(f).ToList();
             if (clean) removeSurrogates(l);
@@ -38,17 +35,14 @@ namespace isa3.Aids.Reflections
         public static PropertyInfo Property<T>(string name)
             => Safe.Run(() => typeof(T).GetProperty(name), (PropertyInfo)null);
 
-        public static PropertyInfo Property<T>(Expression<Func<T, object>> e)
-        {
+        public static PropertyInfo Property<T>(Expression<Func<T, object>> e) {
             var n = GetMember.Name(e);
 
             return Safe.Run(() => typeof(T).GetProperty(n), (PropertyInfo)null);
         }
 
-        private static void removeSurrogates(IList<MemberInfo> l)
-        {
-            for (var i = l.Count; i > 0; i--)
-            {
+        private static void removeSurrogates(IList<MemberInfo> l) {
+            for (var i = l.Count; i > 0; i--) {
                 var m = l[i - 1];
 
                 if (!isSurrogate(m)) continue;
@@ -56,8 +50,7 @@ namespace isa3.Aids.Reflections
             }
         }
 
-        private static bool isSurrogate(MemberInfo m)
-        {
+        private static bool isSurrogate(MemberInfo m) {
             var n = m.Name;
 
             if (string.IsNullOrEmpty(n)) return false;
@@ -70,14 +63,12 @@ namespace isa3.Aids.Reflections
             return n.Contains(t) || n.Contains(c);
         }
 
-        public static List<object> ReadWritePropertyValues(object obj)
-        {
+        public static List<object> ReadWritePropertyValues(object obj) {
             var l = new List<object>();
 
             if (obj is null) return l;
 
-            foreach (var p in Properties(obj.GetType()))
-            {
+            foreach (var p in Properties(obj.GetType())) {
                 if (!p.CanWrite) continue;
                 addValue(p, obj, l);
             }
@@ -85,20 +76,16 @@ namespace isa3.Aids.Reflections
             return l;
         }
 
-        private static void addValue(PropertyInfo p, object o, List<object> l)
-        {
+        private static void addValue(PropertyInfo p, object o, List<object> l) {
             var indexer = p.GetIndexParameters();
 
             if (indexer.Length == 0) l.Add(p.GetValue(o));
-            else
-            {
+            else {
                 var i = 0;
 
-                while (true)
-                {
+                while (true) {
                     try { l.Add(p.GetValue(o, new object[] { i++ })); }
-                    catch
-                    {
+                    catch {
                         l.Add(i);
 
                         return;

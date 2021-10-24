@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using isa3.Data.Common;
+﻿using isa3.Data.Common;
 
-namespace isa3.Data.Others
-{
-    public class TrainingData : BaseData
-    {
+namespace isa3.Data.Others {
+    public class TrainingData : BaseData {
         public string Name { get; set; }
         public string Description { get; set; }
         public string LocationOfTraining { get; set; }

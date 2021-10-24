@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace isa3.Aids.Logging
-{
-    public interface ILogBook
-    {
+namespace isa3.Aids.Logging {
+    public interface ILogBook {
         void WriteEntry(string message);
 
         void WriteEntry(Exception e);

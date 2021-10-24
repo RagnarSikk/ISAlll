@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using isa3.Aids.Reflections;
+﻿using isa3.Aids.Reflections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace isa3.Tests.Aids
-{
+namespace isa3.Tests.Aids {
     [TestClass]
-    public class GetMemberTests 
-    {
+    public class GetMemberTests {
 
         private readonly string stringField = null;
         private string stringProperty { get; } = null;

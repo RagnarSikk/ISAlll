@@ -1,12 +1,9 @@
-﻿using isa3.Data.Common;
-using isa3.Data.People;
+﻿using isa3.Data.People;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace isa3.Tests.Data.People
-{
+namespace isa3.Tests.Data.People {
     [TestClass]
-    public class AdminstratorDataTests : SealedTests<PersonRoleData>
-    {
+    public class AdminstratorDataTests : SealedTests<PersonRoleData> {
         [TestMethod] public void AdministartorIdTest() => isProperty<string>();
     }
     //TODO: Gunnar andis video 103 lopus kaks taski, mille eest punkte koguda

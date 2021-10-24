@@ -1,11 +1,7 @@
-﻿using isa3.Data.Common;
-using isa3.Data.People;
-using System;
+﻿using System;
 
-namespace isa3.Data.People
-{
-    public class PersonRoleData : PersonData
-    {
+namespace isa3.Data.People {
+    public class PersonRoleData : PersonData {
 
         public DateTime HireDate { get; set; }
         public string Certifications { get; set; }

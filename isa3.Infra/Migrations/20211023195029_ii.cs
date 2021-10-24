@@ -1,16 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+using System;
 
-namespace isa3.Infra.Migrations
-{
-    public partial class ii : Migration
-    {
-        protected override void Up(MigrationBuilder migrationBuilder)
-        {
+namespace isa3.Infra.Migrations {
+    public partial class ii : Migration {
+        protected override void Up(MigrationBuilder migrationBuilder) {
             migrationBuilder.CreateTable(
                 name: "AthleteData",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Weight = table.Column<double>(type: "float", nullable: false),
@@ -25,15 +21,13 @@ namespace isa3.Infra.Migrations
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
-                constraints: table =>
-                {
+                constraints: table => {
                     table.PrimaryKey("PK_AthleteData", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "NutritionistData",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ValidFrom = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -47,15 +41,13 @@ namespace isa3.Infra.Migrations
                     HireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Certifications = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
-                constraints: table =>
-                {
+                constraints: table => {
                     table.PrimaryKey("PK_NutritionistData", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "PhysiotherapistData",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ValidFrom = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -69,15 +61,13 @@ namespace isa3.Infra.Migrations
                     HireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Certifications = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
-                constraints: table =>
-                {
+                constraints: table => {
                     table.PrimaryKey("PK_PhysiotherapistData", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "TherapistData",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ValidFrom = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -91,14 +81,12 @@ namespace isa3.Infra.Migrations
                     HireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Certifications = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
-                constraints: table =>
-                {
+                constraints: table => {
                     table.PrimaryKey("PK_TherapistData", x => x.Id);
                 });
         }
 
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
+        protected override void Down(MigrationBuilder migrationBuilder) {
             migrationBuilder.DropTable(
                 name: "AthleteData");
 

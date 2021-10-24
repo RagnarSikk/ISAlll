@@ -1,9 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace isa3.Tests.Domain.Others
-{
+namespace isa3.Tests.Domain.Others {
     [TestClass]
-    public class ServiceTests
-    {
+    public class ServiceTests {
     }
 }

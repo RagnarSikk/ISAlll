@@ -1,50 +1,39 @@
 ﻿using isa3.Data.Common;
-using isa3.Data.Others;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace isa3.Tests.Data.Others
-{
+namespace isa3.Tests.Data.Others {
     [TestClass]
-    public class TrainingDataTests : SealedTests<BaseData>
-    {
+    public class TrainingDataTests : SealedTests<BaseData> {
         [TestMethod]
-        public void NameTest()
-        {
+        public void NameTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void DescriptionTest()
-        {
+        public void DescriptionTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void LocationOfTrainingTest()
-        {
+        public void LocationOfTrainingTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void AvailableEquipmentTest()
-        {
+        public void AvailableEquipmentTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void MaxNumberOfAthletesTest()
-        {
+        public void MaxNumberOfAthletesTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void MinNumberOfAthletesTest()
-        {
+        public void MinNumberOfAthletesTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void NumberOfAthletesTest()
-        {
+        public void NumberOfAthletesTest() {
             Assert.Inconclusive();
         }
         [TestMethod]
-        public void NumberOfCoachesRequiredTest()
-        {
+        public void NumberOfCoachesRequiredTest() {
             Assert.Inconclusive();
         }
     }

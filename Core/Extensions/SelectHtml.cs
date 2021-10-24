@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-using isa3.Aids.Methods;
+﻿using isa3.Aids.Methods;
 using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 
-namespace isa3.Core.Extensions
-{
-    public static class SelectHtml
-    {
+namespace isa3.Core.Extensions {
+    public static class SelectHtml {
         public static IHtmlContent Select<TModel, TResult>(
             this IHtmlHelper<TModel> h, Expression<Func<TModel, TResult>> e,
             IEnumerable<SelectListItem> selectList, string optionLabel)
@@ -16,20 +14,17 @@ namespace isa3.Core.Extensions
 
         public static IHtmlContent Select<TModel, TResult1, TResult2>(
             this IHtmlHelper<TModel> h, Expression<Func<TModel, TResult1>> label,
-            Expression<Func<TModel, TResult2>> value, IEnumerable<SelectListItem> selectList, string optionLabel)
-        {
+            Expression<Func<TModel, TResult2>> value, IEnumerable<SelectListItem> selectList, string optionLabel) {
             var n = h.DisplayNameFor(label);
             return Select(h, value, selectList, optionLabel, n);
         }
         public static IHtmlContent Select<TModel, TResult>(this IHtmlHelper<TModel> h,
-            Expression<Func<TModel, TResult>> e, IEnumerable<SelectListItem> selectList, string optionLabel, string displayName)
-        {
+            Expression<Func<TModel, TResult>> e, IEnumerable<SelectListItem> selectList, string optionLabel, string displayName) {
             var s = htmlStrings(h, e, selectList, optionLabel, displayName);
             return new HtmlContentBuilder(s);
         }
         internal static List<object> htmlStrings<TModel, TResult>(IHtmlHelper<TModel> h,
-            Expression<Func<TModel, TResult>> e, IEnumerable<SelectListItem> selectList, string optionLabel, string displayName)
-        {
+            Expression<Func<TModel, TResult>> e, IEnumerable<SelectListItem> selectList, string optionLabel, string displayName) {
             var l = new List<object>();
             Safe.Run(() => {
                 l.Add(new HtmlString("<dt class=\"col-sm-2\">"));
