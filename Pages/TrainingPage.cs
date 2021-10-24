@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace isa3.Pages
 {
-    class TrainingPage
+    public abstract class TrainingPage
     {
     }
 }
