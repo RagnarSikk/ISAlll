@@ -16,7 +16,7 @@ namespace isa3.soft.Areas.Athletes {
         [BindProperty]
         public AthleteData AthleteData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }
@@ -53,7 +53,7 @@ namespace isa3.soft.Areas.Athletes {
             return RedirectToPage("./Index");
         }
 
-        private bool AthleteDataExists(int id) {
+        private bool AthleteDataExists(string id) {
             return _context.AthleteData.Any(e => e.Id == id);
         }
     }

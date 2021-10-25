@@ -17,7 +17,7 @@ namespace isa3.soft.Areas.Personal.Coaches {
         [BindProperty]
         public CoachData CoachData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }
@@ -54,7 +54,7 @@ namespace isa3.soft.Areas.Personal.Coaches {
             return RedirectToPage("./Index");
         }
 
-        private bool CoachDataExists(int id) {
+        private bool CoachDataExists(string id) {
             return _context.CoachData.Any(e => e.Id == id);
         }
     }

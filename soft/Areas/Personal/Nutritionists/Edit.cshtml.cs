@@ -17,7 +17,7 @@ namespace isa3.soft.Areas.Personal.Nutritionists {
         [BindProperty]
         public NutritionistData NutritionistData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }
@@ -53,7 +53,7 @@ namespace isa3.soft.Areas.Personal.Nutritionists {
             return RedirectToPage("./Index");
         }
 
-        private bool NutritionistDataExists(int id) {
+        private bool NutritionistDataExists(string id) {
             return _context.NutritionistData.Any(e => e.Id == id);
         }
     }

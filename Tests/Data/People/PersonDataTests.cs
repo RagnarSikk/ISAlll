@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace isa3.Tests.Data.People {
     [TestClass]
-    public class PersonDataTests : SealedTests<BaseData> {
+    public class PersonDataTests : SealedTests<NamedEntityData> {
         [TestMethod]
         public void LastNameTest() { Assert.Inconclusive(); }
 

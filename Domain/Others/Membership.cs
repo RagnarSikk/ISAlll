@@ -1,9 +1,10 @@
-﻿using isa3.Domain.Common;
-using isa3.Domain.People;
+﻿using isa3.Data.Others;
+using isa3.Domain.Common;
 
 namespace isa3.Domain.Others {
-    public class Membership : Base {
-        public Payment Payment { get; set; }
-        public Athlete Athlete { get; set; }
+    public sealed class Membership : DefinedEntity<MembershipData> {
+        public Membership(MembershipData d) : base(d) { }
+        //public Payment Payment { get; set; }
+        //public Athlete Athlete { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace isa3.soft.Areas.Personal.Therapists {
         [BindProperty]
         public TherapistData TherapistData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }

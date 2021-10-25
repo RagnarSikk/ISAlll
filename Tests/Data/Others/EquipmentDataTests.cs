@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace isa3.Tests.Data.Others {
     [TestClass]
-    public class EquipmentDataTests : SealedTests<BaseData> {
+    public class EquipmentDataTests : SealedTests<NamedEntityData> {
         [TestMethod]
         public void NameTest() {
             Assert.Inconclusive();

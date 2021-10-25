@@ -17,7 +17,7 @@ namespace isa3.soft.Areas.Services {
         [BindProperty]
         public ServicesData ServicesData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }
@@ -54,7 +54,7 @@ namespace isa3.soft.Areas.Services {
             return RedirectToPage("./Index");
         }
 
-        private bool ServicesDataExists(int id) {
+        private bool ServicesDataExists(string id) {
             return _context.ServicesData.Any(e => e.Id == id);
         }
     }

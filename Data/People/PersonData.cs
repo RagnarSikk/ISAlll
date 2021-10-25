@@ -3,7 +3,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace isa3.Data.People {
-    public class PersonData : BaseData {
+    public class PersonData : NamedEntityData {
         [StringLength(50)] public string LastName { get; set; }
         [StringLength(50)] public string FirstMidName { get; set; }
         public string FullName => LastName + " " + FirstMidName;

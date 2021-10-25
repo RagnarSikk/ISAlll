@@ -16,7 +16,7 @@ namespace isa3.soft.Areas.Trainings {
         [BindProperty]
         public TrainingData TrainingData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }
@@ -53,7 +53,7 @@ namespace isa3.soft.Areas.Trainings {
             return RedirectToPage("./Index");
         }
 
-        private bool TrainingDataExists(int id) {
+        private bool TrainingDataExists(string id) {
             return _context.TrainingData.Any(e => e.Id == id);
         }
     }

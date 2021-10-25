@@ -16,7 +16,7 @@ namespace isa3.soft.Areas.Personal.Physiotherapists {
         [BindProperty]
         public PhysiotherapistData PhysiotherapistData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }
@@ -53,7 +53,7 @@ namespace isa3.soft.Areas.Personal.Physiotherapists {
             return RedirectToPage("./Index");
         }
 
-        private bool PhysiotherapistDataExists(int id) {
+        private bool PhysiotherapistDataExists(string id) {
             return _context.PhysiotherapistData.Any(e => e.Id == id);
         }
     }

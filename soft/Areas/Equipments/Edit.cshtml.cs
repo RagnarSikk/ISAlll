@@ -17,7 +17,7 @@ namespace isa3.soft.Equipments {
         [BindProperty]
         public EquipmentData EquipmentData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }
@@ -54,7 +54,7 @@ namespace isa3.soft.Equipments {
             return RedirectToPage("./Index");
         }
 
-        private bool EquipmentDataExists(int id) {
+        private bool EquipmentDataExists(string id) {
             return _context.EquipmentData.Any(e => e.Id == id);
         }
     }

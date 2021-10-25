@@ -12,7 +12,7 @@ namespace isa3.Infra {
             {
                 new()
                {
-                   Id = 0, Name = "HIIT", Description = "Intensiivne 60min", LocationOfTraining = "Tallinn",
+                   Name = "HIIT", Description = "Intensiivne 60min", LocationOfTraining = "Tallinn",
                    AvailableEquipment = "kk",
 
                },

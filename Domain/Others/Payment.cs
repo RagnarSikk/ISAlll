@@ -1,8 +1,11 @@
-﻿using isa3.Domain.Common;
-using isa3.Domain.People;
+﻿using isa3.Data.Others;
+using isa3.Domain.Common;
 
 namespace isa3.Domain.Others {
-    public class Payment : Base {
-        public Athlete Athlete { get; set; }
+    public sealed class Payment : NamedEntity<PaymentData> {
+        public Payment(PaymentData d) : base(d) { }
+        public decimal Cost => Data?.Cost ?? UnspecifiedDecimal;
+        public string MembershipId => Data?.MembershipId ?? Unspecified;
+        //public Athlete Athlete { get; set; }
     }
 }

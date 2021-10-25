@@ -14,7 +14,7 @@ namespace isa3.soft.Areas.Trainings {
 
         public TrainingData TrainingData { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id) {
+        public async Task<IActionResult> OnGetAsync(string id) {
             if (id == null) {
                 return NotFound();
             }

@@ -1,8 +1,8 @@
 ﻿using isa3.Data.Common;
 
 namespace isa3.Data.Others {
-    public class TrainingData : BaseData {
-        public string Name { get; set; }
+    public class TrainingData : DefinedEntityData {
+        //public string Name { get; set; }
         public string Description { get; set; }
         public string LocationOfTraining { get; set; }
         public string AvailableEquipment { get; set; } //Todo: Kuidas panna kirja, mis

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace isa3.Data.Common {
+namespace isa3.Domain.Common {
     public abstract class BaseEntity {
         public static string Unspecified => Aids.Constants.Word.Unspecified;
         public static DateTime UnspecifiedValidFrom => DateTime.MinValue;

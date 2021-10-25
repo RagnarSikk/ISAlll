@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace isa3.Tests.Data.Others {
     [TestClass]
-    public class PaymentDataTests : SealedTests<BaseData> {
+    public class PaymentDataTests : SealedTests<NamedEntityData> {
         [TestMethod]
         public void AmountTest() {
             Assert.Inconclusive();
