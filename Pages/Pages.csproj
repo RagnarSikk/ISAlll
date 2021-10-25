@@ -15,4 +15,8 @@
     <ProjectReference Include="..\isa3.Infra\Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>

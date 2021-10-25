@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="isa3.Domain.People.Administrator" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People\Administrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Domain.People.Athlete">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAIAAAAAAUAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People\Athlete.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Membership" />
+      <Property Name="Payment" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Trainings" />
+      <Property Name="Services" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="isa3.Domain.People.Coach">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People\Coach.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Services" />
+      <Property Name="Trainings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="isa3.Domain.People.Nutritionist">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People\Nutritionist.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Services" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="isa3.Domain.People.Person">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People\Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Roles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="isa3.Domain.People.PersonRole" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People\PersonRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Domain.People.Physiotherapist" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People\Physiotherapist.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PhysioServiceList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="isa3.Domain.People.Therapist">
+    <Position X="12.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People\Therapist.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TherapistServiceList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="isa3.Domain.Others.Equipment" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Others\Equipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Domain.Others.Membership" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Others\Membership.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Domain.Others.Payment" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Others\Payment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isa3.Domain.Others.Service">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAABAAAIAAAAAIAQAAAAAAAAA=</HashCode>
+      <FileName>Others\Service.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Physiotherapist" />
+      <Property Name="Nutritionist" />
+      <Property Name="Therapist" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="isa3.Domain.Others.Training">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAAAAAAAhAAAABAACAAAABAAAAAAAAAEKAAAAAgI=</HashCode>
+      <FileName>Others\Training.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Equipments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
